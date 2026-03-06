@@ -1,52 +1,96 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" author="Daniel">
-        <title>My personal Web</title>
-    </head>
-    <body>
-        <h1>Welcome to my personal web</h1>
-        <table>
-            <tr>
-                <td><img src="./C:\Users\danei\OneDrive\Desktop\webdevelopment\profile.jpg"
-     style="width:300px; height:300px; border-radius:50%;"> </td>
-                <td>
-                    <h3>Daniel Gelchu</h3>
-        <p><b>Software Engineer</b> at <i>Google</i></p>
-        <p>I am a web developer passionated about creating beautiful and functional website!</p>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Daniel Gelchu" />
+    <meta name="description" content="Personal portfolio of Daniel Gelchu, Software Engineer" />
+    <title>Daniel Gelchu — Software Engineer</title>
+    <style>
+      body {
+        font-family: Georgia, serif;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 0 20px;
+        color: #1a1a1a;
+        line-height: 1.6;
+      }
+      h1 { font-size: 1.4rem; color: #333; margin-bottom: 4px; }
+      h2 { font-size: 1.1rem; border-bottom: 1px solid #ccc; padding-bottom: 4px; margin-top: 32px; }
+      table { border-collapse: collapse; }
+      .profile-img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 2px solid #ccc;
+      }
+      .profile-cell { padding-right: 24px; vertical-align: top; }
+      .skills-table th {
+        text-align: left;
+        padding: 4px 16px 4px 0;
+        font-weight: normal;
+        color: #555;
+        width: 120px;
+      }
+      .skills-table td { padding: 4px 0; }
+      a { color: #1a73e8; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      hr { border: none; border-top: 1px solid #ddd; margin: 24px 0; }
+    </style>
+  </head>
+  <body>
+
+    <table>
+      <tr>
+        <td class="profile-cell">
+          <img
+            src="https://ui-avatars.com/api/?name=Daniel+Gelchu&size=120&background=4a90d9&color=fff&rounded=true"
+            alt="Profile photo of Daniel Gelchu"
+            class="profile-img"
+          />
         </td>
-            </tr>
-        </table>
-        <hr>
-        <ul>
-            <li>IU/UX Designer</li>
-            <li>Software Engineer at google</li>
-            <li>Backend Developer</li>
-        </ul>
-        <h1>Work Experiance</h1>
-        <h1>Skills</h1>
-        <table>
-            <tr>
-                <th>
-                    Frontend
-                </th>
-                <td>⭐⭐⭐⭐</td>
-        </tr>
-        <tr>
-            <th>
-                Backend
-            </th>
-            <td>⭐⭐⭐⭐</td>
-        </tr>
-         </tr>
-        <tr>
-            <th>
-               Database
-            </th>
-            <td>⭐⭐⭐⭐</td>
-        </tr>
-        
-        </table>
-        <a href="contact.html">Contact Me</a>
-    </body>
+        <td>
+          <h1>Daniel Gelchu</h1>
+          <p><strong>Software Engineer</strong> &amp; <em>UI/UX Designer</em></p>
+          <p>I am a web developer passionate about building clean, functional, and user-focused websites.</p>
+        </td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <h2>Experience</h2>
+    <p><strong>Software Engineer</strong> — Google<br />
+    <em>2022 – Present</em><br />
+    Brief description of your role and key contributions here.</p>
+
+    <p><strong>Backend Developer</strong> — [Previous Company]<br />
+    <em>2020 – 2022</em><br />
+    Brief description of your role and key contributions here.</p>
+
+    <h2>Skills</h2>
+    <table class="skills-table">
+      <tr>
+        <th>Frontend</th>
+        <td>⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <th>Backend</th>
+        <td>⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <th>Database</th>
+        <td>⭐⭐⭐⭐</td>
+      </tr>
+      <tr>
+        <th>UI/UX Design</th>
+        <td>⭐⭐⭐</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <a href="contact.html">Contact Me →</a>
+
+  </body>
 </html>
