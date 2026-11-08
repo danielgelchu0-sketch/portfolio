@@ -3,8 +3,9 @@
   "brandName": "Biruh Digital",
   "brandNameAm": "ብሩህ ዲጂታል",
   "developerName": "Daniel Gelchu",
-  "domain": "biruhdigital.pages.dev",
-  "siteUrl": "https://biruhdigital.pages.dev",
+  "defaultLang": "am",
+  "domain": "portfolio.horbabicho.workers.dev",
+  "siteUrl": "https://portfolio.horbabicho.workers.dev",
   "contact": {
     "telegram": "Abule_da",
     "phone": "+251938890630",

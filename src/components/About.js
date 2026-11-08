@@ -19,13 +19,22 @@ function renderAbout(content, config, lang = "en") {
       <div class="about-grid">
         <div class="about-visual">
           <div class="avatar-frame">
-            <img 
-              src="/brand/avatar.svg" 
-              alt="Daniel Gelchu - Solo Software Developer & Systems Engineer" 
-              width="320" 
-              height="320" 
-              loading="lazy" 
-            />
+            <div class="avatar-img-wrap">
+              <picture>
+                <source srcset="/brand/daniel-gelchu.webp" type="image/webp">
+                <img 
+                  src="/brand/daniel-gelchu.png" 
+                  alt="${config.developerName} - Solo Software Developer & Systems Engineer" 
+                  width="360" 
+                  height="360" 
+                  loading="lazy" 
+                />
+              </picture>
+            </div>
+            <div class="avatar-status-pill">
+              <span class="status-indicator"></span>
+              <span>${lang === "am" ? "ለአዳዲስ ፕሮጀክቶች ዝግጁ" : "Available for Projects"}</span>
+            </div>
           </div>
         </div>
 

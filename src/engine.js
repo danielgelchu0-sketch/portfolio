@@ -153,8 +153,9 @@ function build(projectRoot) {
     return renderLayout({ bodyContent, content, config, lang });
   }
 
-  // Generate /index.html (default English route with auto-redirect/toggle)
-  const defaultHtml = renderPage("en");
+  // Generate /index.html (default language: Amharic)
+  const defaultLang = config.defaultLang || "am";
+  const defaultHtml = renderPage(defaultLang);
   fs.writeFileSync(path.join(distDir, "index.html"), defaultHtml, "utf-8");
 
   // Generate /en/index.html

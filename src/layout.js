@@ -52,7 +52,7 @@ function renderLayout({ bodyContent, content, config, lang = "en" }) {
   <!-- Favicon & Touch Icons -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="apple-touch-icon" href="/brand/apple-touch-icon.png" />
-  <meta name="theme-color" content="#0B0F19" />
+  <meta name="theme-color" content="#090A0F" />
 
   <!-- Master Stylesheet -->
   <link rel="stylesheet" href="/styles/main.css" />

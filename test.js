@@ -44,9 +44,12 @@ for (const file of requiredFiles) {
   assert(fs.existsSync(fp), `File exists: ${file}`);
 }
 
+const config = JSON.parse(fs.readFileSync(path.join(__dirname, "site.config.json"), "utf-8"));
+const defaultLang = config.defaultLang || "am";
+
 // 2. HTML Semantics & Accessibility Audits
 const htmlPages = [
-  { name: "Root (Default)", path: "index.html", expectedLang: "en" },
+  { name: "Root (Default)", path: "index.html", expectedLang: defaultLang },
   { name: "English Route", path: "en/index.html", expectedLang: "en" },
   { name: "Amharic Route", path: "am/index.html", expectedLang: "am" }
 ];
