@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" width="64" height="64">
+  <!-- Outer Modern Hexagon Base -->
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="#2563EB" />
+  <!-- Crisp Geometric "B" with Forward Code Chevron '>' -->
+  <path d="M20 18 H35 C40 18 43 21 43 25 C43 28.5 40.5 31 37 32 C41.5 33 44 36 44 40 C44 44.5 40.5 48 35 48 H20 V18 Z M27 24 V30 H34 C36.2 30 37.5 28.8 37.5 27 C37.5 25.2 36.2 24 34 24 H27 Z M27 36 V42 H35 C37.5 42 39 40.8 39 39 C39 37.2 37.5 36 35 36 H27 Z" fill="#FFFFFF" />
+  <!-- Radiant Forward Node (Clarifying Dot / Spark) -->
+  <circle cx="47" cy="17" r="4" fill="#F59E0B" />
+</svg>

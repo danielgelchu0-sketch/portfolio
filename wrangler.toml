@@ -1,0 +1,14 @@
+# wrangler.toml - Cloudflare Pages Deployment Configuration
+name = "biruh-digital-portfolio"
+compatibility_date = "2026-11-08"
+
+# Static site output directory
+pages_build_output_dir = "dist"
+
+[build]
+command = "node build.js"
+watch_dir = "src"
+
+[vars]
+NODE_VERSION = "24.16.0"
+SITE_ENV = "production"

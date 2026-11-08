@@ -1,0 +1,62 @@
+[
+  {
+    "id": "campus-gabaa",
+    "name": "Campus Gabaa (GabaaHU)",
+    "liveUrl": "https://campus-gabaa.onrender.com/",
+    "image": "/projects/campus-gabaa.webp",
+    "imagePng": "/projects/campus-gabaa.png",
+    "tech": ["Django 5.2", "Python", "PostgreSQL", "Tailwind CSS", "Render Cloud"],
+    "en": {
+      "clientType": "Campus Stationery & Dorm Kiosk Ecosystem",
+      "problem": "University students faced extreme price fragmentation and time waste walking between 60+ dorm blocks to compare prices for notebooks, thesis printing, and basic supplies.",
+      "built": "Engineered a multi-kiosk price comparison and marketplace web application tailored for Haramaya University. Built canonical product aggregation with automated price freshness badges and crowd-sourced accuracy verification across campus vendors. Structured for high mobile performance with zero-budget cloud architecture.",
+      "result": "Deployed live in production on Render with active multi-kiosk cataloging, saving students search time and giving small campus kiosks direct digital visibility."
+    },
+    "am": {
+      "clientType": "የዩኒቨርሲቲ ኪዮስኮችና የጽህፈት መሳሪያ የገበያ መድረክ",
+      "problem": "ተማሪዎች የደብተር፣ የህትመት እና መሰረታዊ የጽህፈት መሳሪያ ዋጋዎችን ለማወዳደር በ60+ ዶርሞች መካከል በእግር በመመላለስ ሰዓታት ያባክኑ ነበር።",
+      "built": "ለሀረማያ ዩኒቨርሲቲ ማህበረሰብ የሚሆን የባለብዙ ኪዮስክ የዋጋ ማወዳደሪያና የገበያ ድረ-ገጽ ገንብቻለሁ። የዋጋ ትኩስነት መለያ ባጆችን እና የተጠቃሚዎች የዋጋ ማረጋገጫ ሲስተም አካቷል። በዜሮ የሆስቲንግ በጀት በከፍተኛ የሞባይል ፍጥነት እንዲሰራ ተደርጓል።",
+      "result": "በሬንደር (Render) ክላውድ ላይ በቀጥታ ስራ ጀምሮ ተማሪዎችን ከተደጋጋሚ የእግር ጉዞ የታደገ ሲሆን ለአነስተኛ ኪዮስኮችም ቀጥተኛ ተደራሽነትን ፈጥሯል።"
+    }
+  },
+  {
+    "id": "ych-choir",
+    "name": "Group Choristers Digital Hub (YCH)",
+    "liveUrl": "https://ych-choir-site.horbabicho.workers.dev/",
+    "image": "/projects/ych-choir.webp",
+    "imagePng": "/projects/ych-choir.png",
+    "tech": ["Cloudflare Workers", "Edge Storage", "Vanilla JS", "Modern CSS"],
+    "en": {
+      "clientType": "Faith & Cultural Choir Community",
+      "problem": "The choir community lacked a centralized digital home to distribute spiritual audio albums, publish lyrics, share event notices, and manage community support.",
+      "built": "Developed a zero-latency media hub hosted entirely on Cloudflare Workers edge infrastructure. Implemented an integrated mobile-first audio streaming player, song catalog, event notices, and direct contact channels for community members. Designed with lightweight assets ensuring instantaneous playback on low-bandwidth mobile connections.",
+      "result": "Launched and running live on Cloudflare edge network with 100% uptime and $0.00 monthly hosting bills, making choir media accessible worldwide."
+    },
+    "am": {
+      "clientType": "የመዘምራን ህብረት እና ማህበረሰብ ድረ-ገጽ",
+      "problem": "የመዘምራን ህብረቱ ዝማሬዎችን፣ አልበሞችን፣ የግጥም ስብስቦችን እና የኮንሰርት መርሃ-ግብሮችን የሚያሰራጭበት የተማከለ ዲጂታል መድረክ አልነበረውም።",
+      "built": "በክላውድፍሌር ኤጅ (Cloudflare Workers) ላይ የተመሰረተ ፈጣን የሚዲያ ማዕከል ገንብቻለሁ። በሞባይል በቀላሉ የሚሰራ የኦዲዮ ማጫወቻ፣ የአልበም ማውጫ፣ የዝግጅቶች ማስታወቂያ እና የቀጥታ ድጋፍ መስጫ መንገዶችን ያካተተ ነው። ዝቅተኛ የኢንተርኔት ፍጥነት ባላቸው አካባቢዎችም ሳይቆራረጥ ይሰራል።",
+      "result": "በክላውድፍሌር ኤጅ ኔትወርክ ላይ ያለምንም ወርሃዊ ክፍያ (0.00$) በቀጥታ ስራ ጀምሮ በዓለም ዙሪያ ላሉ የማህበረሰብ አባላት ተደራሽ ሆኗል።"
+    }
+  },
+  {
+    "id": "hkhc-chat",
+    "name": "HKHC Community Discussion Platform",
+    "liveUrl": "https://hkhc.pythonanywhere.com/discussions/",
+    "image": "/projects/hkhc-chat.webp",
+    "imagePng": "/projects/hkhc-chat.png",
+    "tech": ["Python", "Django", "SQLite / PostgreSQL", "Security Auditing", "PythonAnywhere"],
+    "en": {
+      "clientType": "Youth & Community Organization",
+      "problem": "Youth and community members needed a safe, structured, and moderated space to discuss sensitive life questions, mental health, and faith without fear of judgment.",
+      "built": "Architected a production-grade question-and-answer forum and discussion platform. Features granular privacy controls with anonymous submission modes, role-based moderation workflows, and robust security defenses against abuse. Replaced chaotic chat group noise with organized, threaded knowledge archives.",
+      "result": "Successfully deployed and live on PythonAnywhere, providing community moderators with full administrative controls and members with a private, trusted forum."
+    },
+    "am": {
+      "clientType": "የወጣቶችና የማህበረሰብ መወያያ መድረክ",
+      "problem": "ወጣቶችና የማህበረሰብ አባላት ሚስጥራዊ ጥያቄዎችን፣ የህይወትና የእምነት ጉዳዮችን ያለምንም ፍርሃት በግልጽ የሚወያዩበት አስተማማኝና ቁጥጥር ያለው መድረክ አስፈልጎ ነበር።",
+      "built": "ደህንነቱ የተጠበቀና የተዋቀረ የጥያቄና መልስ መወያያ ፎረም በPython እና Django ገንብቻለሁ። ማንነትን ደብቆ የመወያየት አማራጭ፣ ጥብቅ የሞደሬሽን ቁጥጥር እና የደህንነት መጠበቂያዎችን ያካተተ ሲሆን የተዘበራረቁ የቡድን ቻቶችን ወደ ስርአት ባለው እውቀት ቀይሯል።",
+      "result": "በPythonAnywhere ላይ በቀጥታ ስራ ጀምሮ ለማህበረሰብ መሪዎች ሙሉ የቁጥጥር ስልጣን፣ ለአባላት ደግሞ ሚስጥራዊና አስተማማኝ የመወያያ መድረክ ሆኖ በማገልገል ላይ ይገኛል።"
+    }
+  }
+]

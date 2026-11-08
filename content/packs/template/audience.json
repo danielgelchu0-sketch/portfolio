@@ -1,0 +1,50 @@
+[
+  {
+    "id": "placeholder-problem-1",
+    "icon": "clipboard-list",
+    "en": {
+      "title": "[PLACEHOLDER Audience Problem 1 Title]",
+      "problem": "[PLACEHOLDER Description of the primary operational problem experienced by this target audience.]"
+    },
+    "am": {
+      "title": "[PLACEHOLDER የችግር 1 ርዕስ]",
+      "problem": "[PLACEHOLDER ለዚህ ንግድ ዘርፍ ደንበኞች የሚያጋጥም ዋና የስራ ማነቆ ዝርዝር መግለጫ።]"
+    }
+  },
+  {
+    "id": "placeholder-problem-2",
+    "icon": "folder-sync",
+    "en": {
+      "title": "[PLACEHOLDER Audience Problem 2 Title]",
+      "problem": "[PLACEHOLDER Description of manual communication or inventory issues in this sector.]"
+    },
+    "am": {
+      "title": "[PLACEHOLDER የችግር 2 ርዕስ]",
+      "problem": "[PLACEHOLDER በዚህ ዘርፍ የሚያጋጥም የመረጃ ወይም የመስተጓጎል ችግር መግለጫ።]"
+    }
+  },
+  {
+    "id": "placeholder-problem-3",
+    "icon": "map-pin",
+    "en": {
+      "title": "[PLACEHOLDER Audience Problem 3 Title]",
+      "problem": "[PLACEHOLDER Description of local search discovery and customer acquisition challenges.]"
+    },
+    "am": {
+      "title": "[PLACEHOLDER የችግር 3 ርዕስ]",
+      "problem": "[PLACEHOLDER አዳዲስ ደንበኞችን በማግኘት በኩል የሚያጋጥም ተግዳሮት።]"
+    }
+  },
+  {
+    "id": "placeholder-problem-4",
+    "icon": "shield-check",
+    "en": {
+      "title": "[PLACEHOLDER Audience Problem 4 Title]",
+      "problem": "[PLACEHOLDER Description of software costs or system reliability bottlenecks.]"
+    },
+    "am": {
+      "title": "[PLACEHOLDER የችግር 4 ርዕስ]",
+      "problem": "[PLACEHOLDER የቴክኖሎጂ አስተማማኝነት እና የወጪ ማነቆ መግለጫ።]"
+    }
+  }
+]

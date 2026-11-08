@@ -1,0 +1,72 @@
+[
+  {
+    "id": "online-catalog",
+    "icon": "book-open",
+    "en": {
+      "title": "Digital Rate Card & Service Catalog",
+      "problem": "Customers walk in or call constantly to ask about current stationery prices, binding costs, and paper availability.",
+      "deliverable": "A lightning-fast, mobile-optimized catalog displaying your live price lists, services, and paper specs, with a one-click 'Order on Telegram' button."
+    },
+    "am": {
+      "title": "ዲጂታል የዋጋ ዝርዝር እና አገልግሎት ማውጫ",
+      "problem": "ደንበኞች ስለ ወቅታዊ የጽህፈት መሳሪያ ዋጋዎች፣ ስለ ባይንዲንግ እና ወረቀት አይነቶች ደጋግመው እየደወሉ ይጠይቃሉ።",
+      "deliverable": "ደንበኞች በሞባይላቸው በቀላሉ የሚከፍቱት ፈጣን የዋጋ ዝርዝር እና በአንድ ቁልፍ በቴሌግራም የሚያዙበት ዘመናዊ ማውጫ።"
+    }
+  },
+  {
+    "id": "order-pipeline",
+    "icon": "inbox",
+    "en": {
+      "title": "Automated Print Job Order Portal",
+      "problem": "Flash drive viruses damage your production PCs, and customer print instructions (pages, color, binding) get lost in messy chat histories.",
+      "deliverable": "A clean web submission portal where clients upload files, select exact print specs, and receive an automated Telegram confirmation directly to your shop."
+    },
+    "am": {
+      "title": "ቀጥታ የህትመት ትዕዛዝ መቀበያ ሲስተም",
+      "problem": "የፍላሽ ድራይቭ ቫይረሶች የማተሚያ ኮምፒውተሮችን ያበላሻሉ፤ የህትመት ዝርዝሮችም በቴሌግራም መልእክቶች ውስጥ ይጠፋሉ።",
+      "deliverable": "ደንበኞች ፋይላቸውን የሚሰቅሉበት፣ የህትመት አይነት (ቀለም/ጥቁር ነጭ፣ ባይንድ) የሚመርጡበትና ወደ እርስዎ ቴሌግራም የሚላክበት ሲስተም።"
+    }
+  },
+  {
+    "id": "business-web",
+    "icon": "globe",
+    "en": {
+      "title": "High-Speed Business Profile & Search Presence",
+      "problem": "Institutional buyers, NGOs, and businesses looking for reliable print vendors or corporate suppliers cannot verify your credibility online.",
+      "deliverable": "A crisp, authoritative studio website loaded in under 1 second on mobile, linked with your Google Maps profile and direct Telegram/phone actions."
+    },
+    "am": {
+      "title": "ፈጣን የንግድ ድረ-ገጽ እና የጉግል ካርታ ትስስር",
+      "problem": "ትልልቅ ድርጅቶችና መንግስታዊ ያልሆኑ ተቋማት አስተማማኝ የህትመትና ጽህፈት መሳሪያ አቅራቢ ሲፈልጉ የእርስዎን ህጋዊነት ማረጋገጥ ይሳናቸዋል።",
+      "deliverable": "በሞባይል በ1 ሰከንድ ውስጥ የሚከፈት፣ አስተማማኝነትዎን የሚያሳይ እና ከጉግል ካርታና ቴሌግራም ጋር የተሳሰረ ዘመናዊ ድረ-ገጽ።"
+    }
+  },
+  {
+    "id": "inventory-tools",
+    "icon": "database",
+    "en": {
+      "title": "Paper & Material Usage Tracking Tools",
+      "problem": "Toner cartridges and premium paper stocks run out unpredictably, causing unexpected downtime and unrecorded sales.",
+      "deliverable": "A lightweight web-based stock and sales tracker accessible on your phone, with low-stock alerts and daily summary reports."
+    },
+    "am": {
+      "title": "የወረቀትና ማቴሪያል ክትትል ቀላል ሲስተም",
+      "problem": "የቶነርና የወረቀት ክምችት ሳያስቡት በማለቁ የስራ መስተጓጎል እና ያልተመዘገቡ ሽያጮች ይከሰታሉ።",
+      "deliverable": "በስልክዎ የሚቆጣጠሩት ቀላል የዕቃ ክምችትና የዕለታዊ ሽያጭ መመዝገቢያ ሲስተም፤ እጥረት ከመከሰቱ በፊት ማሳወቂያ የሚሰጥ።"
+    }
+  },
+  {
+    "id": "cloud-devops",
+    "icon": "server",
+    "en": {
+      "title": "Zero-Cost Edge Hosting & Maintenance",
+      "problem": "Traditional web agencies trap small businesses into paying $50–$150/year in foreign currency for hosting that frequently goes down.",
+      "deliverable": "Deployment to Cloudflare Pages edge CDN with global SSL, 99.9% uptime, zero recurring hosting fees, and direct code ownership."
+    },
+    "am": {
+      "title": "የነፃ ኤጅ ሆስቲንግና የቴክኒክ ድጋፍ",
+      "problem": "የተለመዱ አሰራሮች በየአመቱ በውጭ ምንዛሪ የሚከፈል ከፍተኛ የሆስቲንግ ክፍያ ያስከፍላሉ፤ ብዙ ጊዜም ድረ-ገጹ ይቋረጣል።",
+      "deliverable": "በክላውድፍሌር ኤጅ ኔትወርክ ላይ የሚሰራ፣ በየወሩ ምንም የሆስቲንግ ወጪ የሌለው፣ 99.9% አስተማማኝና ሁልጊዜ ፈጣን የሆነ ዝርጋታ።"
+    }
+  }
+]

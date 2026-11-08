@@ -1,0 +1,44 @@
+[
+  {
+    "id": "placeholder-service-1",
+    "icon": "globe",
+    "en": {
+      "title": "[PLACEHOLDER Service 1 Title]",
+      "problem": "[PLACEHOLDER Problem description solved by service 1.]",
+      "deliverable": "[PLACEHOLDER Concrete deliverable and customer value provided.]"
+    },
+    "am": {
+      "title": "[PLACEHOLDER የአገልግሎት 1 ርዕስ]",
+      "problem": "[PLACEHOLDER በአገልግሎት 1 የሚፈታው ተጨባጭ ችግር።]",
+      "deliverable": "[PLACEHOLDER ደንበኛው የሚያገኘው ተጨባጭ ውጤት።]"
+    }
+  },
+  {
+    "id": "placeholder-service-2",
+    "icon": "database",
+    "en": {
+      "title": "[PLACEHOLDER Service 2 Title]",
+      "problem": "[PLACEHOLDER Problem description solved by service 2.]",
+      "deliverable": "[PLACEHOLDER Concrete deliverable and customer value provided.]"
+    },
+    "am": {
+      "title": "[PLACEHOLDER የአገልግሎት 2 ርዕስ]",
+      "problem": "[PLACEHOLDER በአገልግሎት 2 የሚፈታው ተጨባጭ ችግር።]",
+      "deliverable": "[PLACEHOLDER ደንበኛው የሚያገኘው ተጨባጭ ውጤት።]"
+    }
+  },
+  {
+    "id": "placeholder-service-3",
+    "icon": "server",
+    "en": {
+      "title": "[PLACEHOLDER Service 3 Title]",
+      "problem": "[PLACEHOLDER Problem description solved by service 3.]",
+      "deliverable": "[PLACEHOLDER Concrete deliverable and customer value provided.]"
+    },
+    "am": {
+      "title": "[PLACEHOLDER የአገልግሎት 3 ርዕስ]",
+      "problem": "[PLACEHOLDER በአገልግሎት 3 የሚፈታው ተጨባጭ ችግር።]",
+      "deliverable": "[PLACEHOLDER ደንበኛው የሚያገኘው ተጨባጭ ውጤት።]"
+    }
+  }
+]

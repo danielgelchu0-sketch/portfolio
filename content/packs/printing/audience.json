@@ -1,0 +1,62 @@
+[
+  {
+    "id": "price-friction",
+    "icon": "clipboard-list",
+    "en": {
+      "title": "Hours Lost to Repetitive Price Inquiries",
+      "problem": "Customers constantly call or message your Telegram asking for current paper prices, binding rates, or thesis printing fees, taking time away from actual production."
+    },
+    "am": {
+      "title": "ለተደጋጋሚ የዋጋ ጥያቄዎች የሚባክን ጊዜ",
+      "problem": "ደንበኞች ስለ ወረቀት፣ ስለ ቴሲስ ማተሚያ ወይም ስለ ባይንድ ዋጋ በስልክና ቴሌግራም ደጋግመው ሲጠይቁ ትክክለኛውን የስራ ሰዓትዎን ያባክናሉ።"
+    }
+  },
+  {
+    "id": "file-chaos",
+    "icon": "folder-sync",
+    "en": {
+      "title": "Flash Drive Viruses & Disorganized Print Files",
+      "problem": "Clients bringing USB flash drives infect your printing computers with malware, while file specifications (paper size, single/double sided) get mixed up in manual chats."
+    },
+    "am": {
+      "title": "የፍላሽ ድራይቭ ቫይረስ እና የተዘበራረቁ ፋይሎች",
+      "problem": "ደንበኞች በUSB ፍላሽ የሚያመጧቸው ፋይሎች የማተሚያ ኮምፒውተሮችን በቫይረስ ያጠቃሉ፤ የማተሚያ ዝርዝሮችም በእጅ ሲያዙ ይዘበራረቃሉ።"
+    }
+  },
+  {
+    "id": "visibility-gap",
+    "icon": "map-pin",
+    "en": {
+      "title": "Missing High-Value Corporate & Institutional Orders",
+      "problem": "Universities, NGOs, and local companies search online for reliable bulk stationery suppliers and print shops, but choose competitors because you lack a verified web profile."
+    },
+    "am": {
+      "title": "ትልልቅ የድርጅት እና የተቋማት ትዕዛዞች ማጣት",
+      "problem": "ድርጅቶችና ዩኒቨርሲቲዎች አስተማማኝ የማተሚያና የጽህፈት መሳሪያ አቅራቢ በኢንተርኔት ሲፈልጉ፣ ግልጽ ድረ-ገጽ የሌላቸውን አልፈው ወደ ሌሎች ይሄዳሉ።"
+    }
+  },
+  {
+    "id": "cloud-waste",
+    "icon": "shield-check",
+    "en": {
+      "title": "Overpriced Foreign Hosting & Overcomplicated Systems",
+      "problem": "Most agencies sell fragile, slow WordPress templates requiring expensive monthly USD renewals, which break whenever a plugin updates."
+    },
+    "am": {
+      "title": "ከፍተኛ የዶላር የሆስቲንግ ወጪ እና ውስብስብ ሲስተሞች",
+      "problem": "አብዛኞቹ ድርጅቶች በየወሩ ከፍተኛ የውጭ ምንዛሪ ክፍያ የሚጠይቁና በተደጋጋሚ የሚበላሹ ውስብስብ የዎርድፕረስ ድረ-ገጾችን ይሸጣሉ።"
+    }
+  },
+  {
+    "id": "mobile-speed",
+    "icon": "zap",
+    "en": {
+      "title": "Slow Websites That Fail on Ethiopian Mobile Networks",
+      "problem": "Heavily bloated websites take 15+ seconds to load on local 3G/4G connections, driving away potential clients before they even see your phone number."
+    },
+    "am": {
+      "title": "በአገር ውስጥ የሞባይል ዳታ የሚጓተቱ ድረ-ገጾች",
+      "problem": "ክብደት ያላቸው የተለመዱ ድረ-ገጾች በኢትዮጵያ የሞባይል ኔትወርክ ለመከፈት ከ15 ሰከንድ በላይ ስለሚፈጁ ደንበኞች ሳይመለከቱ ይወጣሉ።"
+    }
+  }
+]

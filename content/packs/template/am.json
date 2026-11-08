@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "title": "[PLACEHOLDER የድረ-ገጽ ርዕስ — የብራንድ ስም]",
+    "description": "[PLACEHOLDER ለፍለጋ ሞተሮች እና ለማህበራዊ ሚዲያ የሚሆን አጭር መግለጫ።]",
+    "ogTitle": "[PLACEHOLDER የማህበራዊ ሚዲያ ርዕስ]",
+    "ogDescription": "[PLACEHOLDER የማህበራዊ ሚዲያ መግለጫ።]"
+  },
+  "nav": {
+    "work": "የተሰሩ ስራዎች",
+    "services": "አገልግሎቶች",
+    "process": "የአሰራር ሂደት",
+    "about": "ስለ እኔ",
+    "contact": "ያግኙኝ",
+    "ctaTelegram": "በቴሌግራም ያናግሩኝ"
+  },
+  "hero": {
+    "badge": "[PLACEHOLDER የንግድ ዘርፍ ትኩረት]",
+    "headline": "[PLACEHOLDER ለታለመው ደንበኛ ዋና የዋጋ ተስፋ ርዕስ]",
+    "support": "[PLACEHOLDER ዲጂታል ሲስተሞች ወይም ድረ-ገጾች እንዴት የዚህን ዘርፍ የስራ ጫና እንደሚያቀሉ የሚገልጽ።]",
+    "ctaPrimary": "በቴሌግራም መልእክት ይላኩ",
+    "ctaSecondary": "የተሰሩ ስራዎችን ይመልከቱ",
+    "proofSub": "የተመረጠ ፕሮጀክት፦",
+    "proofTitle": "[PLACEHOLDER የናሙና ፕሮጀክት ስም]"
+  },
+  "stats": {
+    "speed": "[PLACEHOLDER መለኪያ 1]",
+    "hosting": "[PLACEHOLDER መለኪያ 2]",
+    "direct": "[PLACEHOLDER መለኪያ 3]"
+  },
+  "audience": {
+    "badge": "[PLACEHOLDER የችግሮች ክፍል መለያ]",
+    "headline": "[PLACEHOLDER የታለመው ደንበኛ ዋና የስራ ማነቆዎች ርዕስ]",
+    "subtitle": "[PLACEHOLDER የዕለት ተዕለት ችግሮቻቸውን ከምንሰጠው ምህንድስና ጋር የሚያገናኝ ንዑስ ርዕስ።]"
+  },
+  "services": {
+    "badge": "[PLACEHOLDER የአገልግሎት መለያ]",
+    "headline": "[PLACEHOLDER የአገልግሎቶች ዋና ርዕስ]",
+    "subtitle": "[PLACEHOLDER የተግባራዊ አገልግሎቶቻችን አጠቃላይ መግለጫ።]",
+    "problemLabel": "የሚፈታው ችግር፦",
+    "deliverableLabel": "የሚያገኙት ውጤት፦",
+    "quoteCta": "የተለየ የስራ ሀሳብ አለዎት? በቴሌግራም ያማክሩኝ።"
+  },
+  "work": {
+    "badge": "የተሰሩ ስራዎች",
+    "headline": "በቀጥታ ስራ ላይ ያሉ ፕሮጀክቶች",
+    "subtitle": "ያለ ምንም የተጋነነ መረጃ ወይም የውሸት ቁጥር፣ በተጨባጭ የተሰሩ እና በአገልግሎት ላይ ያሉ እውነተኛ ድረ-ገጾች።",
+    "problemLabel": "ያጋጠመው ችግር፦",
+    "solutionLabel": "የተገነባው መፍትሄ፦",
+    "resultLabel": "የተገኘው ውጤት፦",
+    "stackLabel": "የቴክኖሎጂ አይነት፦",
+    "visitSite": "ድረ-ገጹን በቀጥታ ይመልከቱ"
+  },
+  "process": {
+    "badge": "የአሰራር ሂደት",
+    "headline": "ግልጽ እና ደረጃውን የጠበቀ አሰራር",
+    "subtitle": "ምንም ያልተጠበቀ መዘግየት ወይም ድምጽ ማጥፋት የለም። ከመጀመሪያው ቀን ጀምሮ እስከ መጨረሻው ድረስ በቀጥታ ከእኔ ጋር አብረው ይሰራሉ።",
+    "steps": [
+      {
+        "num": "01",
+        "title": "ፍላጎትን መረዳት እና ማቀድ",
+        "desc": "[PLACEHOLDER ደረጃ 1 መግለጫ]"
+      },
+      {
+        "num": "02",
+        "title": "ግልጽና ቋሚ ዋጋ ማቅረብ",
+        "desc": "[PLACEHOLDER ደረጃ 2 መግለጫ]"
+      },
+      {
+        "num": "03",
+        "title": "እየተፈተሸ የሚሰራ ግንባታ",
+        "desc": "[PLACEHOLDER ደረጃ 3 መግለጫ]"
+      },
+      {
+        "num": "04",
+        "title": "ማስረከብ እና ቀጥታ ማስጀመር",
+        "desc": "[PLACEHOLDER ደረጃ 4 መግለጫ]"
+      }
+    ]
+  },
+  "about": {
+    "badge": "ስለ ገንቢው",
+    "headline": "ከተጨባጭ የንግድ ፍላጎት ጋር የተሳሰረ የሶፍትዌር ምህንድስና",
+    "bioP1": "[PLACEHOLDER የገንቢው መግቢያ አንቀጽ።]",
+    "bioP2": "[PLACEHOLDER የቴክኒክ አቀራረብ እና የዜሮ ወጪ ክላውድ ፍልስፍና።]",
+    "bioP3": "[PLACEHOLDER የግል ሀላፊነት እና ቀጥተኛ የደንበኛ ግንኙነት መርህ።]",
+    "principlesHeading": "የምመራባቸው የሙያ መርሆዎች",
+    "principles": [
+      "[PLACEHOLDER መርህ 1]",
+      "[PLACEHOLDER መርህ 2]",
+      "[PLACEHOLDER መርህ 3]",
+      "[PLACEHOLDER መርህ 4]"
+    ]
+  },
+  "contact": {
+    "badge": "እንነጋገር",
+    "headline": "[PLACEHOLDER የግንኙነት ክፍል ዋና ርዕስ]",
+    "subtitle": "[PLACEHOLDER ደንበኛው ፍላጎቱን እንዲገልጽ የሚጋብዝ ጥሪ።]",
+    "telegramBtn": "በቴሌግራም ያናግሩኝ",
+    "phoneBtn": "በቀጥታ በስልክ ይደውሉ",
+    "emailBtn": "ኢሜይል ይላኩ",
+    "whatsappBtn": "በዋትስአፕ ያናግሩኝ",
+    "availabilityNotice": "[PLACEHOLDER ወቅታዊ የስራ መቀበያ ሁኔታ።]"
+  },
+  "footer": {
+    "brandTagline": "[PLACEHOLDER የግርጌ ብራንድ መሪ ቃል]",
+    "rights": "መብቱ በህግ የተጠበቀ ነው።",
+    "builtNote": "በዘመናዊ እና እጅግ ፈጣን የስታቲክ ቴክኖሎጂ የተሰራ።"
+  }
+}

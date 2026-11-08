@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" fill="none" width="240" height="48">
+  <style>
+    .brand-text-name { fill: #0F172A; }
+    .brand-text-sub { fill: #64748B; }
+    @media (prefers-color-scheme: dark) {
+      .brand-text-name { fill: #F8FAFC; }
+      .brand-text-sub { fill: #94A3B8; }
+    }
+    :root[data-theme="dark"] .brand-text-name { fill: #F8FAFC; }
+    :root[data-theme="dark"] .brand-text-sub { fill: #94A3B8; }
+  </style>
+  <!-- Mark Symbol -->
+  <g transform="translate(0, 4)">
+    <rect width="40" height="40" rx="9" fill="#2563EB" />
+    <path d="M12 11 H22 C25.5 11 27.5 13 27.5 15.5 C27.5 17.5 25.8 19 23.5 19.8 C26.2 20.5 28 22.5 28 25 C28 28 25.5 30 22 30 H12 V11 Z M16.5 15 V19 H21.5 C22.8 19 23.5 18.2 23.5 17 C23.5 15.8 22.8 15 21.5 15 H16.5 Z M16.5 22.5 V26.5 H22 C23.5 26.5 24.2 25.7 24.2 24.5 C24.2 23.3 23.5 22.5 22 22.5 H16.5 Z" fill="#FFFFFF" />
+    <circle cx="30" cy="10" r="2.8" fill="#F59E0B" />
+  </g>
+  <!-- Wordmark Text -->
+  <text x="52" y="27" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" letter-spacing="-0.02em" class="brand-text-name">BIRUH<tspan fill="#2563EB"> DIGITAL</tspan></text>
+  <text x="53" y="39" font-family="'Noto Sans Ethiopic', system-ui, sans-serif" font-size="10" font-weight="600" letter-spacing="0.05em" class="brand-text-sub">ብሩህ ዲጂታል • SOFTWARE STUDIO</text>
+</svg>

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "placeholder-project-1",
+    "name": "[PLACEHOLDER Featured Project 1]",
+    "liveUrl": "#",
+    "image": "/projects/campus-gabaa.webp",
+    "imagePng": "/projects/campus-gabaa.png",
+    "tech": ["[PLACEHOLDER Tech 1]", "[PLACEHOLDER Tech 2]"],
+    "en": {
+      "clientType": "[PLACEHOLDER Client Type / Industry]",
+      "problem": "[PLACEHOLDER Exactly one sentence describing the problem.]",
+      "built": "[PLACEHOLDER Two to three sentences describing what was built and engineered.]",
+      "result": "[PLACEHOLDER Concrete measurable result or delivery scope detail.]"
+    },
+    "am": {
+      "clientType": "[PLACEHOLDER የደንበኛው የስራ ዘርፍ]",
+      "problem": "[PLACEHOLDER ያጋጠመውን ችግር በአንድ ዓረፍተ-ነገር የሚገልጽ።]",
+      "built": "[PLACEHOLDER የተገነባውን መፍትሄ በሁለት ወይም በሦስት ዓረፍተ-ነገሮች የሚገልጽ።]",
+      "result": "[PLACEHOLDER የተገኘው ተጨባጭ ውጤት ወይም የተረከበው ስራ ዝርዝር።]"
+    }
+  }
+]

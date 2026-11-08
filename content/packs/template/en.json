@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "title": "[PLACEHOLDER Site Title — Brand Name]",
+    "description": "[PLACEHOLDER Brief meta description for search engines and social cards.]",
+    "ogTitle": "[PLACEHOLDER Open Graph Title]",
+    "ogDescription": "[PLACEHOLDER Open Graph Description for social sharing.]"
+  },
+  "nav": {
+    "work": "Work",
+    "services": "Services",
+    "process": "How I Work",
+    "about": "About",
+    "contact": "Contact",
+    "ctaTelegram": "Message on Telegram"
+  },
+  "hero": {
+    "badge": "[PLACEHOLDER Target Industry Focus]",
+    "headline": "[PLACEHOLDER Core Value Proposition Headline for Target Audience]",
+    "support": "[PLACEHOLDER Supporting explanation of how custom software or websites solve specific industry friction.]",
+    "ctaPrimary": "Message Me on Telegram",
+    "ctaSecondary": "See My Work",
+    "proofSub": "Featured project:",
+    "proofTitle": "[PLACEHOLDER Featured Case Study Name]"
+  },
+  "stats": {
+    "speed": "[PLACEHOLDER Stat 1 Metric]",
+    "hosting": "[PLACEHOLDER Stat 2 Metric]",
+    "direct": "[PLACEHOLDER Stat 3 Metric]"
+  },
+  "audience": {
+    "badge": "[PLACEHOLDER Audience Section Badge]",
+    "headline": "[PLACEHOLDER Headline for Target Audience Operational Challenges]",
+    "subtitle": "[PLACEHOLDER Subtitle connecting their daily challenges to our engineering solutions.]"
+  },
+  "services": {
+    "badge": "[PLACEHOLDER Services Badge]",
+    "headline": "[PLACEHOLDER Services Section Headline]",
+    "subtitle": "[PLACEHOLDER Description of our practical, no-bloat service offerings.]",
+    "problemLabel": "Problem Solved:",
+    "deliverableLabel": "What You Get:",
+    "quoteCta": "Have a specific project in mind? Ask me for a quote on Telegram."
+  },
+  "work": {
+    "badge": "Portfolio",
+    "headline": "Selected Production Work",
+    "subtitle": "Real-world web applications built, optimized, and deployed live with zero fabricated metrics.",
+    "problemLabel": "The Problem:",
+    "solutionLabel": "What Was Built:",
+    "resultLabel": "Production Result:",
+    "stackLabel": "Tech Stack:",
+    "visitSite": "Visit Live Application"
+  },
+  "process": {
+    "badge": "How I Work",
+    "headline": "A Transparent, Step-by-Step Delivery Process",
+    "subtitle": "No unexpected delays, no radio silence. You work directly with me from the first scoping conversation to production launch.",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Understand & Scope",
+        "desc": "[PLACEHOLDER Step 1 description]"
+      },
+      {
+        "num": "02",
+        "title": "Clear Fixed-Price Quote",
+        "desc": "[PLACEHOLDER Step 2 description]"
+      },
+      {
+        "num": "03",
+        "title": "Build with Live Demos",
+        "desc": "[PLACEHOLDER Step 3 description]"
+      },
+      {
+        "num": "04",
+        "title": "Handover & Edge Launch",
+        "desc": "[PLACEHOLDER Step 4 description]"
+      }
+    ]
+  },
+  "about": {
+    "badge": "About The Developer",
+    "headline": "Software Engineering Rooted in Real Business Needs",
+    "bioP1": "[PLACEHOLDER Developer introductory bio paragraph.]",
+    "bioP2": "[PLACEHOLDER Technical approach and zero-cost cloud architecture philosophy.]",
+    "bioP3": "[PLACEHOLDER Personal commitment and direct client collaboration standard.]",
+    "principlesHeading": "My Engineering Standards",
+    "principles": [
+      "[PLACEHOLDER Principle 1]",
+      "[PLACEHOLDER Principle 2]",
+      "[PLACEHOLDER Principle 3]",
+      "[PLACEHOLDER Principle 4]"
+    ]
+  },
+  "contact": {
+    "badge": "Let's Talk",
+    "headline": "[PLACEHOLDER Contact Section Headline]",
+    "subtitle": "[PLACEHOLDER Prompt inviting client to describe their requirements.]",
+    "telegramBtn": "Message on Telegram",
+    "phoneBtn": "Direct Phone Call",
+    "emailBtn": "Send an Email",
+    "whatsappBtn": "Message on WhatsApp",
+    "availabilityNotice": "[PLACEHOLDER Current availability status note.]"
+  },
+  "footer": {
+    "brandTagline": "[PLACEHOLDER Brand tagline for footer.]",
+    "rights": "All rights reserved.",
+    "builtNote": "Handcrafted with zero-bloat static architecture."
+  }
+}
