@@ -1,0 +1,62 @@
+[
+  {
+    "id": "electronics-friction",
+    "icon": "zap",
+    "en": {
+      "title": "Electronics & Retail: Endless Pricing & Stock Inquiries",
+      "problem": "Customers constantly message your Telegram or call asking 'What is the price of this laptop?' or 'Is this phone in stock?', consuming hours of your day with repetitive back-and-forth chats."
+    },
+    "am": {
+      "title": "የኤሌክትሮኒክስና የችርቻሮ ሱቆች፦ ተደጋጋሚ የዋጋ እና የዕቃ ጥያቄዎች",
+      "problem": "ደንበኞች ስለ ላፕቶፕ፣ ስልክ ወይም ዕቃዎች ዋጋና ክምችት በየቀኑ በስልክና በቴሌግራም ደጋግመው በመጠየቅ ውድ የስራ ሰዓትዎን ያባክናሉ።"
+    }
+  },
+  {
+    "id": "creators-artists",
+    "icon": "globe",
+    "en": {
+      "title": "Content Creators & Artists: Algorithm Traps & Fragmented Links",
+      "problem": "Social media platforms throttle your organic reach, while generic 'link-in-bio' tools look amateurish and cannot stream high-quality audio/video, showcase full albums, or process bookings."
+    },
+    "am": {
+      "title": "አርቲስቶችና የይዘት አዘጋጆች፦ የማህበራዊ ሚዲያ አልጎሪዝም ገደብ",
+      "problem": "የማህበራዊ ሚዲያ መድረኮች ስራዎ ለተከታታዮች እንዳይደርስ ሲገድቡ፤ የተለመዱ ሊንኮች ደግሞ ሙዚቃዎን፣ አልበምዎንና የዝግጅት ቀጠሮዎችዎን በአግባቡ ማስተናገድ አይችሉም።"
+    }
+  },
+  {
+    "id": "print-file-chaos",
+    "icon": "folder-sync",
+    "en": {
+      "title": "Print & Service Shops: Malware & Disorganized Client Files",
+      "problem": "Walk-in clients bringing flash drives infect your workstations with viruses, while custom order details (pages, binding style, paper grade) get scrambled across manual chats."
+    },
+    "am": {
+      "title": "ማተሚያ ቤቶችና ሰርቪሶች፦ የፍላሽ ቫይረስ እና የተዘበራረቁ ፋይሎች",
+      "problem": "ደንበኞች በUSB ፍላሽ ይዘዋቸው የሚመጡ ፋይሎች ኮምፒውተሮችን በቫይረስ ያጠቃሉ፤ የትዕዛዝ ዝርዝሮችም በቴሌግራም መልእክት ውስጥ ይዘበራረቃሉ።"
+    }
+  },
+  {
+    "id": "local-visibility",
+    "icon": "map-pin",
+    "en": {
+      "title": "Service Providers: Invisibility to Corporate & High-Value Clients",
+      "problem": "Companies, NGOs, and institutions look online for verified local service providers, suppliers, and contractors, but take their business to competitors because you lack a fast, authoritative website."
+    },
+    "am": {
+      "title": "አገልግሎት ሰጪ ድርጅቶች፦ ትልልቅ የድርጅት ስራዎችን ማጣት",
+      "problem": "ትልልቅ ተቋማትና ኩባንያዎች ህጋዊና አስተማማኝ አቅራቢዎችን በኢንተርኔት ሲፈልጉ፣ ተአማኒነት ያለው ድረ-ገጽ የሌላቸውን ንግዶች አልፈው ወደ ሌሎች ይሄዳሉ።"
+    }
+  },
+  {
+    "id": "expensive-hosting",
+    "icon": "shield-check",
+    "en": {
+      "title": "Fragile WordPress Templates & Heavy Dollar Hosting Bills",
+      "problem": "Most agencies sell slow, vulnerable templates that crash on Ethiopian 3G/4G networks and demand $80–$150/year in scarce foreign currency just to keep the servers online."
+    },
+    "am": {
+      "title": "ከፍተኛ የዶላር የሆስቲንግ ወጪ እና የሚጓተቱ ድረ-ገጾች",
+      "problem": "አብዛኞቹ ድርጅቶች በየአመቱ በውጭ ምንዛሪ የሚከፈል ከፍተኛ የሆስቲንግ ክፍያ የሚጠይቁና በአገር ውስጥ ደካማ ኔትወርክ የሚጓተቱ ድረ-ገጾችን ይሰራሉ።"
+    }
+  }
+]

@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "title": "Biruh Digital — Websites & Systems for Ethiopian Enterprise",
+    "description": "High-impact web applications, digital product catalogs, and media streaming platforms for electronics shops, creators, artists, and service businesses in Ethiopia.",
+    "ogTitle": "Biruh Digital | Fast Web Applications & Digital Automation",
+    "ogDescription": "I build practical digital systems and fast websites that solve operational headaches for Ethiopian businesses. Direct engineering by Daniel Gelchu."
+  },
+  "nav": {
+    "work": "Work",
+    "services": "Services",
+    "process": "How I Work",
+    "about": "About",
+    "contact": "Contact",
+    "ctaTelegram": "Message on Telegram"
+  },
+  "hero": {
+    "badge": "Web Apps • Digital Catalogs • Media Hubs",
+    "headline": "Fast, Practical Web Applications Built to Grow Your Business",
+    "support": "I build tailored digital ordering catalogs for retail & electronics, dedicated streaming hubs for creators & artists, and zero-maintenance websites that turn online visitors into paying clients.",
+    "ctaPrimary": "Message Me on Telegram",
+    "ctaSecondary": "See My Work",
+    "proofSub": "Featured live project:",
+    "proofTitle": "Campus Gabaa • Multi-Kiosk Price Comparison Platform"
+  },
+  "stats": {
+    "speed": "Under 1s Load Time",
+    "hosting": "$0/mo Hosting Overhead",
+    "direct": "1-on-1 Direct Engineer"
+  },
+  "audience": {
+    "badge": "Common Business Bottlenecks",
+    "headline": "Operational Friction I Eliminate for Growing Businesses",
+    "subtitle": "Whether you manage an electronics inventory, distribute creative media, or run a high-volume service shop, you don't need agency bloat—you need lean, dependable digital systems."
+  },
+  "services": {
+    "badge": "What I Engineer",
+    "headline": "Engineered for Results, Not Just Aesthetics",
+    "subtitle": "Every system directly tackles a real business bottleneck—no bloated templates, no fragile dependencies, no recurring dollar hosting fees.",
+    "problemLabel": "Problem Solved:",
+    "deliverableLabel": "What You Get:",
+    "quoteCta": "Need a tailored catalog, media hub, or system for your business? Ask me for a quote on Telegram."
+  },
+  "work": {
+    "badge": "Portfolio",
+    "headline": "Selected Production Work",
+    "subtitle": "Real-world web applications built, optimized, and deployed live with zero fabricated metrics.",
+    "problemLabel": "The Problem:",
+    "solutionLabel": "What Was Built:",
+    "resultLabel": "Production Result:",
+    "stackLabel": "Tech Stack:",
+    "visitSite": "Visit Live Application"
+  },
+  "process": {
+    "badge": "How I Work",
+    "headline": "A Transparent, Step-by-Step Delivery Process",
+    "subtitle": "No unexpected delays, no radio silence. You work directly with me from the first scoping conversation to production launch.",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Understand & Scope",
+        "desc": "We review your daily workflow, identify where time or sales are slipping away, and define the exact features needed."
+      },
+      {
+        "num": "02",
+        "title": "Clear Fixed-Price Quote",
+        "desc": "You receive a clear, upfront quote and timeline. No hidden extras or surprise maintenance fees down the line."
+      },
+      {
+        "num": "03",
+        "title": "Build with Live Demos",
+        "desc": "I build the system rapidly, sharing private preview links so you can test and provide feedback on your own mobile phone."
+      },
+      {
+        "num": "04",
+        "title": "Handover & Edge Launch",
+        "desc": "I deploy your system on high-speed global infrastructure with zero recurring hosting costs and guide you on managing it."
+      }
+    ]
+  },
+  "about": {
+    "badge": "About The Developer",
+    "headline": "Software Engineering Rooted in Real Business Needs",
+    "bioP1": "I am Daniel Gelchu, a solo software developer and systems engineer based in Ethiopia. I specialize in building fast, dependable web applications, digital catalogs, and business automation tools for local businesses and independent creators.",
+    "bioP2": "Rather than relying on bloated page builders that crash on slow local mobile connections, I write clean, resilient code and configure zero-budget cloud architectures that run with 99.9% uptime and zero recurring dollar hosting bills.",
+    "bioP3": "When you work with Biruh Digital, there are no project managers or agency markups—you collaborate directly with me. Every system is built to solve tangible operational problems and earn the trust of your clients.",
+    "principlesHeading": "My Engineering Standards",
+    "principles": [
+      "Zero-overhead hosting architectures ($0/month cloud bills)",
+      "Strict mobile-first performance optimized for Ethiopian 3G/4G",
+      "Direct personal accountability on every project",
+      "Clean, documented code with no vendor lock-in"
+    ]
+  },
+  "contact": {
+    "badge": "Let's Talk",
+    "headline": "Ready to Streamline Your Business Operations?",
+    "subtitle": "Send me a message with a brief note about your business, current bottlenecks, or project goals. I typically reply within a few hours.",
+    "telegramBtn": "Message on Telegram",
+    "phoneBtn": "Direct Phone Call",
+    "emailBtn": "Send an Email",
+    "whatsappBtn": "Message on WhatsApp",
+    "availabilityNotice": "Currently accepting new client projects in electronics, retail, media/arts, and service sectors."
+  },
+  "footer": {
+    "brandTagline": "Fast, resilient websites and digital automation tools for Ethiopian enterprise.",
+    "rights": "All rights reserved.",
+    "builtNote": "Handcrafted with zero-bloat static architecture."
+  }
+}

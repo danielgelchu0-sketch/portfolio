@@ -1,0 +1,72 @@
+[
+  {
+    "id": "digital-catalogs",
+    "icon": "zap",
+    "en": {
+      "title": "Digital Catalogs & Live Pricing Systems (Retail & Electronics)",
+      "problem": "Electronics and retail shops waste hours answering repetitive price inquiries, and customers get frustrated by out-of-date word-of-mouth quotes.",
+      "deliverable": "A lightning-fast, mobile-first product catalog displaying real-time prices, specifications, and instant 'Order via Telegram' checkout integration."
+    },
+    "am": {
+      "title": "ዲጂታል የዋጋ ዝርዝር እና የዕቃዎች ካታሎግ (ለኤሌክትሮኒክስ እና ሱቆች)",
+      "problem": "የኤሌክትሮኒክስና የንግድ ሱቆች ደንበኞች ስለ እያንዳንዱ ዕቃ ዋጋና ዝርዝር ደጋግመው በመጠየቃቸው ጊዜያቸውን ያባክናሉ።",
+      "deliverable": "ደንበኞች በስልካቸው የሚከፍቱት ፈጣን የዕቃዎች ካታሎግ፤ ትክክለኛውን ዋጋና ዝርዝር የሚያሳይ እና በአንድ ቁልፍ በቴሌግራም የሚያዙበት ሲስተም።"
+    }
+  },
+  {
+    "id": "creator-hubs",
+    "icon": "globe",
+    "en": {
+      "title": "Artist & Creator Media Hubs (Audio, Video & Portfolios)",
+      "problem": "Musicians, creators, and artists lose audience ownership to social media algorithms and lack a professional platform to showcase works and book gigs.",
+      "deliverable": "A custom, ultra-fast streaming media platform with zero-latency audio/video players, discography/portfolio showcases, event notices, and direct contact/tip channels."
+    },
+    "am": {
+      "title": "የአርቲስቶችና የይዘት አዘጋጆች የሚዲያ ማዕከል (ሙዚቃ፣ ቪዲዮና ፖርትፎሊዮ)",
+      "problem": "አርቲስቶችና የይዘት አዘጋጆች ተከታዮቻቸውን በማህበራዊ ሚዲያ አልጎሪዝም ምክንያት ያጣሉ፤ ሙያዊ የሆነ ስራዎቻቸውን ማሳያና ቀጠሮ መያዣ ገጽ ይጎድላቸዋል።",
+      "deliverable": "በከፍተኛ ፍጥነት የሚሰራ የኦዲዮ/ቪዲዮ ማጫወቻ፣ የአልበም ማውጫ፣ የኮንሰርት መርሃ-ግብር እና የቀጥታ ድጋፍ መስጫ ያካተተ ራሱን የቻለ ድረ-ገጽ።"
+    }
+  },
+  {
+    "id": "order-intake",
+    "icon": "inbox",
+    "en": {
+      "title": "Automated Order Intake & File Submission Portals",
+      "problem": "Service and print shops suffer from virus-infected USB drives and confused order specifications across unorganized Telegram chats.",
+      "deliverable": "A clean web submission portal where clients upload files, pick job parameters (colors, paper weight, quantity), and automatically push tickets to your phone."
+    },
+    "am": {
+      "title": "ቀጥታ የትዕዛዝ መቀበያ እና የፋይል መላኪያ ሲስተም",
+      "problem": "የፍላሽ ድራይቭ ቫይረሶች ኮምፒውተሮችን ያበላሻሉ፤ የትዕዛዝ ዝርዝሮችም በቴሌግራም መልእክት ውስጥ ይዘበራረቃሉ።",
+      "deliverable": "ደንበኞች ፋይላቸውን በዌብ የሚልኩበት፣ ዝርዝር መመሪያዎችን የሚመርጡበትና በቀጥታ ወደ ስልክዎ ማሳወቂያ የሚላክበት የተደራጀ ሲስተም።"
+    }
+  },
+  {
+    "id": "corporate-presence",
+    "icon": "book-open",
+    "en": {
+      "title": "High-Speed Business Profiles & Local Search Presence",
+      "problem": "Corporate clients, institutions, and tourists search online for trusted local service providers and suppliers, but skip businesses without verified web profiles.",
+      "deliverable": "A crisp, authoritative studio website loaded in under 1 second on mobile, linked with Google Maps and optimized for local search authority."
+    },
+    "am": {
+      "title": "ፈጣን የንግድ ድረ-ገጽ እና የጉግል ካርታ ትስስር",
+      "problem": "ትልልቅ ተቋማትና ድርጅቶች አስተማማኝ አቅራቢዎችን በኢንተርኔት ሲፈልጉ፣ ህጋዊነታቸውን ማረጋገጥ ይሳናቸዋል።",
+      "deliverable": "በሞባይል በ1 ሰከንድ ውስጥ የሚከፈት፣ ተአማኒነትዎን የሚያሳይ እና ከጉግል ካርታና ቴሌግራም ጋር የተሳሰረ ዘመናዊ ድረ-ገጽ።"
+    }
+  },
+  {
+    "id": "edge-hosting",
+    "icon": "server",
+    "en": {
+      "title": "Zero-Cost Edge Hosting & Infrastructure Engineering",
+      "problem": "Traditional web agencies trap businesses into paying $80–$150/year in scarce foreign exchange for slow servers that regularly experience downtime.",
+      "deliverable": "Deployment to Cloudflare Pages edge CDN with global SSL, 99.9% uptime, zero recurring monthly cloud bills, and full source code ownership."
+    },
+    "am": {
+      "title": "የነፃ ኤጅ ሆስቲንግና የቴክኒክ ድጋፍ",
+      "problem": "የተለመዱ አሰራሮች በየአመቱ በውጭ ምንዛሪ የሚከፈል ከፍተኛ የሆስቲንግ ክፍያ ያስከፍላሉ፤ ብዙ ጊዜም ድረ-ገጹ ይቋረጣል።",
+      "deliverable": "በክላውድፍሌር ኤጅ ኔትወርክ ላይ የሚሰራ፣ በየወሩ ምንም የሆስቲንግ ወጪ የሌለው (0$)፣ 99.9% አስተማማኝና ሁልጊዜ ፈጣን የሆነ ዝርጋታ።"
+    }
+  }
+]
