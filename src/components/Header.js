@@ -6,6 +6,11 @@ function renderHeader(content, config, lang = "en") {
   const otherLang = lang === "en" ? "am" : "en";
   const otherLangLabel = lang === "en" ? "አማርኛ" : "English";
   const telegramUrl = `https://t.me/${config.contact.telegram.replace("@", "")}`;
+  const waClean = config.contact.whatsapp ? config.contact.whatsapp.replace(/[^0-9]/g, "") : "";
+  const waGreeting = lang === "am"
+    ? encodeURIComponent("ሰላም ዳንኤል፣ የዲጂታል አገልግሎት ፈልጌ ነበረ።")
+    : encodeURIComponent("Hello Daniel, I'd like to inquire about your digital services.");
+  const whatsappUrl = `https://wa.me/${waClean}?text=${waGreeting}`;
 
   return `
   <header class="site-header" role="banner">
@@ -29,9 +34,13 @@ function renderHeader(content, config, lang = "en") {
             <a href="/am/" class="lang-btn ${lang === "am" ? "active" : ""}" data-lang-target="am" aria-current="${lang === "am" ? "true" : "false"}">አማ</a>
           </div>
 
-          <a href="${telegramUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" aria-label="${t.ctaTelegram}">
+          <a href="${telegramUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm btn-header-chat" aria-label="${t.ctaTelegram}">
             ${getIcon("telegram")}
-            <span>${t.ctaTelegram}</span>
+            <span>Telegram</span>
+          </a>
+          <a href="${whatsappUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm btn-header-chat" aria-label="${lang === "am" ? "በዋትስአፕ ያናግሩኝ" : "WhatsApp"}">
+            ${getIcon("whatsapp")}
+            <span>WhatsApp</span>
           </a>
         </div>
       </div>

@@ -5,6 +5,11 @@ function renderHero(content, config, lang = "en") {
   const t = content[lang].hero;
   const stats = content[lang].stats;
   const telegramUrl = `https://t.me/${config.contact.telegram.replace("@", "")}`;
+  const waClean = config.contact.whatsapp ? config.contact.whatsapp.replace(/[^0-9]/g, "") : "";
+  const waGreeting = lang === "am"
+    ? encodeURIComponent("ሰላም ዳንኤል፣ የዲጂታል አገልግሎት ፈልጌ ነበረ።")
+    : encodeURIComponent("Hello Daniel, I'd like to inquire about your digital services.");
+  const whatsappUrl = `https://wa.me/${waClean}?text=${waGreeting}`;
 
   return `
   <section class="hero-section" id="top">
@@ -22,6 +27,10 @@ function renderHero(content, config, lang = "en") {
             <a href="${telegramUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
               ${getIcon("telegram")}
               <span>${t.ctaPrimary}</span>
+            </a>
+            <a href="${whatsappUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+              ${getIcon("whatsapp")}
+              <span>${lang === "am" ? "በዋትስአፕ ያናግሩኝ" : "Message on WhatsApp"}</span>
             </a>
             <a href="#work" class="btn btn-secondary btn-lg">
               <span>${t.ctaSecondary}</span>

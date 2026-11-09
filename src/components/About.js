@@ -4,6 +4,26 @@ const { getIcon } = require("./icons");
 function renderAbout(content, config, lang = "en") {
   const t = content[lang].about;
 
+  let githubHtml = "";
+  if (config.social && config.social.github) {
+    githubHtml = `
+    <a href="${config.social.github}" target="_blank" rel="noopener noreferrer" class="social-badge-btn" aria-label="GitHub Profile">
+      ${getIcon("github")}
+      <span>GitHub</span>
+    </a>
+    `;
+  }
+
+  let linkedinHtml = "";
+  if (config.social && config.social.linkedin) {
+    linkedinHtml = `
+    <a href="${config.social.linkedin}" target="_blank" rel="noopener noreferrer" class="social-badge-btn" aria-label="LinkedIn Profile">
+      ${getIcon("linkedin")}
+      <span>LinkedIn</span>
+    </a>
+    `;
+  }
+
   const principlesHtml = t.principles.map(item => {
     return `
     <li>
@@ -34,6 +54,10 @@ function renderAbout(content, config, lang = "en") {
             <div class="avatar-status-pill">
               <span class="status-indicator"></span>
               <span>${lang === "am" ? "ለአዳዲስ ፕሮጀክቶች ዝግጁ" : "Available for Projects"}</span>
+            </div>
+            <div class="developer-social-links">
+              ${githubHtml}
+              ${linkedinHtml}
             </div>
           </div>
         </div>

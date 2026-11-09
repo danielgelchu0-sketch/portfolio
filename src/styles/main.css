@@ -180,6 +180,18 @@ input:focus-visible {
   box-shadow: 0 6px 20px var(--primary-glow);
 }
 
+.btn-whatsapp {
+  background-color: #25D366;
+  color: #FFFFFF;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.25);
+}
+.btn-whatsapp:hover {
+  background-color: #1EBE5D;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
 .btn-accent {
   background-color: var(--accent);
   color: #0F172A;
@@ -378,6 +390,20 @@ input:focus-visible {
   display: flex;
   align-items: center;
   gap: 0.85rem;
+}
+
+.btn-header-chat {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+@media (max-width: 680px) {
+  .btn-header-chat span {
+    display: none;
+  }
+  .btn-header-chat {
+    padding: 0.45rem 0.65rem;
+  }
 }
 
 /* Language Switcher */
@@ -829,6 +855,40 @@ input:focus-visible {
   }
 }
 
+.developer-social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.15rem;
+  flex-wrap: wrap;
+}
+.social-badge-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 1rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-full);
+  color: var(--text-primary);
+  font-size: 0.84rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.social-badge-btn svg {
+  width: 17px;
+  height: 17px;
+}
+.social-badge-btn:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--primary);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 102, 255, 0.25);
+}
+
 .about-bio h3 {
   font-size: 1.85rem;
   margin-bottom: 1.25rem;
@@ -1038,6 +1098,48 @@ input:focus-visible {
 }
 .footer-nav a:hover {
   color: var(--text-primary);
+}
+
+.footer-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+@media (min-width: 768px) {
+  .footer-copy {
+    align-items: flex-end;
+  }
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.25rem;
+}
+.footer-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-card);
+  color: var(--text-muted);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.footer-social-link svg {
+  width: 17px;
+  height: 17px;
+}
+.footer-social-link:hover {
+  color: #FFFFFF;
+  border-color: var(--primary);
+  background: var(--bg-card-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 102, 255, 0.2);
 }
 
 /* =====================================================================

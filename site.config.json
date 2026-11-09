@@ -13,5 +13,9 @@
     "hasWhatsApp": true,
     "whatsapp": "+251938890630"
   },
+  "social": {
+    "github": "https://github.com/danielgelchu0-sketch",
+    "linkedin": ""
+  },
   "analyticsId": ""
 }

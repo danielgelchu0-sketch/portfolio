@@ -103,6 +103,8 @@ for (const page of htmlPages) {
   assert(html.includes('channel-whatsapp'), `${page.name} renders WhatsApp button when hasWhatsApp is true`);
   assert(html.includes('https://wa.me/251938890630'), `${page.name} WhatsApp button links to wa.me/251938890630`);
   assert(html.includes('class="floating-whatsapp"'), `${page.name} includes floating quick-action WhatsApp button`);
+  assert(html.includes('btn-whatsapp'), `${page.name} includes WhatsApp CTA button alongside Telegram`);
+  assert(html.includes('https://github.com/danielgelchu0-sketch'), `${page.name} includes GitHub profile link`);
   assert(html.includes('class="ambient-mesh"'), `${page.name} includes ambient background glow mesh`);
 }
 
