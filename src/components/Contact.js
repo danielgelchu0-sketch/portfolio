@@ -11,8 +11,11 @@ function renderContact(content, config, lang = "en") {
   let whatsappHtml = "";
   if (config.contact.hasWhatsApp && config.contact.whatsapp) {
     const waClean = config.contact.whatsapp.replace(/[^0-9]/g, "");
+    const waGreeting = lang === "am" 
+      ? encodeURIComponent("ሰላም ዳንኤል፣ የዲጂታል አገልግሎት ፈልጌ ነበረ።")
+      : encodeURIComponent("Hello Daniel, I'd like to inquire about your digital services.");
     whatsappHtml = `
-    <a href="https://wa.me/${waClean}" target="_blank" rel="noopener noreferrer" class="contact-card-btn channel-whatsapp">
+    <a href="https://wa.me/${waClean}?text=${waGreeting}" target="_blank" rel="noopener noreferrer" class="contact-card-btn channel-whatsapp">
       <div class="contact-icon-large">
         ${getIcon("whatsapp")}
       </div>

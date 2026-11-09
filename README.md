@@ -108,7 +108,7 @@ Edit `site.config.json`:
 "contact": {
   "telegram": "Abule_da",
   "phone": "+251938890630",
-  "email": "danielgelchuo@gmail.com",
+  "email": "danielgelchu0@gmail.com",
   "hasWhatsApp": false,
   "whatsapp": ""
 }
@@ -166,7 +166,7 @@ Follow these exact steps to launch your portfolio online:
    - Open your live site on a real mobile phone (Android / iOS).
    - Tap the Telegram button to verify it launches `@Abule_da`.
    - Tap the phone number to confirm your dialer opens `+251938890630`.
-   - Tap the email button to verify `danielgelchuo@gmail.com`.
+   - Tap the email button to verify `danielgelchu0@gmail.com`.
 
 ---
 

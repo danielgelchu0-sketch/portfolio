@@ -1,9 +1,11 @@
 // src/layout.js - HTML Document Shell with SEO, Open Graph & Accessibility
+const { renderFloatingWhatsApp } = require("./components/FloatingWhatsApp");
 
 function renderLayout({ bodyContent, content, config, lang = "en" }) {
   const meta = content[lang].meta;
   const canonicalUrl = `${config.siteUrl}/${lang === "en" ? "en/" : "am/"}`;
   const ogImage = `${config.siteUrl}/brand/icon-512.png`;
+  const floatingWhatsApp = renderFloatingWhatsApp(config, lang);
 
   let analyticsScript = "";
   if (config.analyticsId) {
@@ -60,15 +62,27 @@ function renderLayout({ bodyContent, content, config, lang = "en" }) {
   ${analyticsScript}
 </head>
 <body>
+  <!-- Ambient 2026 Lighting Glow Mesh -->
+  <div class="ambient-mesh" aria-hidden="true">
+    <div class="mesh-orb mesh-orb-1"></div>
+    <div class="mesh-orb mesh-orb-2"></div>
+    <div class="mesh-orb mesh-orb-3"></div>
+  </div>
+
   <a href="#main-content" class="skip-to-content">${lang === "am" ? "ወደ ዋናው ይዘት ይዝለሉ" : "Skip to main content"}</a>
 
   <div id="page-wrapper">
     ${bodyContent}
   </div>
 
-  <!-- Lightweight, zero-dependency client progressive enhancement -->
+  ${floatingWhatsApp}
+
+  <!-- Lightweight, zero-dependency 2026 client progressive enhancement -->
   <script>
     (function() {
+      // Mark JS active for progressive enhancement
+      document.documentElement.classList.add('js-ready');
+
       // Handle in-page smooth transitions if JS is enabled
       const langBtns = document.querySelectorAll('.lang-btn');
       langBtns.forEach(btn => {
@@ -80,20 +94,45 @@ function renderLayout({ bodyContent, content, config, lang = "en" }) {
         });
       });
 
-      // Smooth section reveal on scroll (restrained IntersectionObserver)
+      // 2026 Smooth Staggered Reveal on Scroll (IntersectionObserver)
       if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
         const observer = new IntersectionObserver((entries) => {
           entries.forEach(entry => {
             if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
+              entry.target.classList.add('is-revealed');
               observer.unobserve(entry.target);
             }
           });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.card, .section-header, .stat-item').forEach(el => {
-          observer.observe(el);
+        }, { 
+          threshold: 0.1,
+          rootMargin: '0px 0px -40px 0px' 
         });
+
+        // Collect elements for fluid entrance
+        const targets = document.querySelectorAll(
+          '.card, .section-header, .stat-item, .contact-card-btn, .hero-content, .hero-showcase, .avatar-frame, .about-bio, .principles-box'
+        );
+
+        // Group sibling items to automatically set cascading stagger delays
+        const groupMap = new Map();
+        targets.forEach(el => {
+          el.classList.add('reveal-node');
+          const parent = el.parentElement;
+          if (!groupMap.has(parent)) {
+            groupMap.set(parent, []);
+          }
+          groupMap.get(parent).push(el);
+        });
+
+        groupMap.forEach(children => {
+          children.forEach((child, index) => {
+            if (index > 0 && index < 6) {
+              child.style.setProperty('--stagger-delay', (index * 70) + 'ms');
+            }
+          });
+        });
+
+        targets.forEach(el => observer.observe(el));
       }
     })();
   </script>

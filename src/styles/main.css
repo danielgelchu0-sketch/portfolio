@@ -477,6 +477,14 @@ input:focus-visible {
   overflow: hidden;
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
   position: relative;
+  animation: float-frame 7s ease-in-out infinite;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+}
+.showcase-frame:hover {
+  animation-play-state: paused;
+  transform: translateY(-8px) scale(1.01);
+  border-color: rgba(96, 165, 250, 0.45);
+  box-shadow: 0 25px 60px rgba(0, 102, 255, 0.22), 0 0 30px rgba(59, 130, 246, 0.15);
 }
 .frame-bar {
   display: flex;
@@ -920,6 +928,18 @@ input:focus-visible {
   border-color: #0088cc;
   box-shadow: 0 10px 25px rgba(0, 136, 204, 0.25);
 }
+.contact-card-btn.channel-phone:hover {
+  border-color: #10B981;
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.25);
+}
+.contact-card-btn.channel-email:hover {
+  border-color: #F59E0B;
+  box-shadow: 0 10px 25px rgba(245, 158, 11, 0.25);
+}
+.contact-card-btn.channel-whatsapp:hover {
+  border-color: #25D366;
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.28);
+}
 .contact-icon-large {
   width: 52px;
   height: 52px;
@@ -1021,6 +1041,248 @@ input:focus-visible {
 }
 
 /* =====================================================================
+   Page Structure & 2026 Visual Depth
+   ===================================================================== */
+#page-wrapper {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+}
+
+/* =====================================================================
+   2026 Atmospheric Ambient Glow Mesh
+   ===================================================================== */
+.ambient-mesh {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.mesh-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.20;
+  will-change: transform;
+  pointer-events: none;
+}
+
+.mesh-orb-1 {
+  width: 520px;
+  height: 520px;
+  background: radial-gradient(circle, #2563EB 0%, rgba(37, 99, 235, 0) 70%);
+  top: -120px;
+  left: 10%;
+  animation: aurora-mesh-1 22s ease-in-out infinite alternate;
+}
+
+.mesh-orb-2 {
+  width: 480px;
+  height: 480px;
+  background: radial-gradient(circle, #6366F1 0%, rgba(99, 102, 241, 0) 70%);
+  top: 30%;
+  right: 5%;
+  animation: aurora-mesh-2 26s ease-in-out infinite alternate;
+}
+
+.mesh-orb-3 {
+  width: 540px;
+  height: 540px;
+  background: radial-gradient(circle, #10B981 0%, rgba(16, 185, 129, 0) 70%);
+  bottom: 5%;
+  left: 8%;
+  animation: aurora-mesh-3 24s ease-in-out infinite alternate;
+}
+
+@keyframes aurora-mesh-1 {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(45px, 35px, 0) scale(1.12); }
+  100% { transform: translate3d(-30px, 50px, 0) scale(0.95); }
+}
+
+@keyframes aurora-mesh-2 {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(-40px, -30px, 0) scale(1.1); }
+  100% { transform: translate3d(30px, 40px, 0) scale(0.92); }
+}
+
+@keyframes aurora-mesh-3 {
+  0% { transform: translate3d(0, 0, 0) scale(0.95); }
+  50% { transform: translate3d(35px, -45px, 0) scale(1.15); }
+  100% { transform: translate3d(-25px, -20px, 0) scale(1); }
+}
+
+/* =====================================================================
+   2026 Scroll-Driven Staggered Entrance Animations
+   ===================================================================== */
+.js-ready .reveal-node {
+  opacity: 0;
+  transform: translateY(24px) scale(0.985);
+  filter: blur(5px);
+  transition: 
+    opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.65s ease;
+  transition-delay: var(--stagger-delay, 0ms);
+  will-change: opacity, transform, filter;
+}
+
+.js-ready .reveal-node.is-revealed {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+/* Floating Showcase Frame Micro-Animation */
+@keyframes float-frame {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+/* =====================================================================
+   Floating WhatsApp Quick-Action Widget
+   ===================================================================== */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1050;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 0.75rem;
+  text-decoration: none;
+  filter: drop-shadow(0 10px 24px rgba(37, 211, 102, 0.35));
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.floating-whatsapp:hover {
+  transform: translateY(-4px) scale(1.04);
+}
+
+.floating-whatsapp-btn {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+  cursor: pointer;
+  outline: none;
+}
+
+.whatsapp-icon-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.25s ease;
+}
+
+.floating-whatsapp:hover .whatsapp-icon-inner {
+  transform: scale(1.12) rotate(4deg);
+}
+
+.floating-whatsapp-btn svg {
+  width: 32px;
+  height: 32px;
+}
+
+.floating-whatsapp-pulse {
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 2px solid #25D366;
+  opacity: 0.85;
+  animation: wa-radar 2.4s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+  pointer-events: none;
+}
+
+@keyframes wa-radar {
+  0% {
+    transform: scale(0.92);
+    opacity: 0.85;
+  }
+  60% {
+    transform: scale(1.48);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.55);
+    opacity: 0;
+  }
+}
+
+.floating-whatsapp-label {
+  background: rgba(16, 18, 23, 0.94);
+  border: 1px solid rgba(37, 211, 102, 0.35);
+  color: #FFFFFF;
+  padding: 0.45rem 0.95rem;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.floating-whatsapp:hover .floating-whatsapp-label {
+  background: rgba(22, 26, 35, 0.98);
+  border-color: rgba(37, 211, 102, 0.6);
+  color: #86EFAC;
+}
+
+.floating-whatsapp-badge {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #25D366;
+  box-shadow: 0 0 8px #25D366;
+  flex-shrink: 0;
+  animation: pulse-status 2s infinite;
+}
+
+@media (max-width: 640px) {
+  .floating-whatsapp {
+    bottom: 1.25rem;
+    right: 1.25rem;
+  }
+  .floating-whatsapp-label {
+    display: none;
+  }
+  .floating-whatsapp-btn {
+    width: 52px;
+    height: 52px;
+  }
+  .floating-whatsapp-btn svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* =====================================================================
    Accessibility & Restrained Motion
    ===================================================================== */
 @media (prefers-reduced-motion: reduce) {
@@ -1029,5 +1291,20 @@ input:focus-visible {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+  .js-ready .reveal-node {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
+  }
+  .mesh-orb {
+    animation: none !important;
+  }
+  .showcase-frame {
+    animation: none !important;
+  }
+  .floating-whatsapp-pulse {
+    animation: none !important;
   }
 }

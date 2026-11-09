@@ -97,10 +97,13 @@ for (const page of htmlPages) {
   // Check contact channels
   assert(html.includes('href="https://t.me/Abule_da"'), `${page.name} links correctly to Telegram @Abule_da`);
   assert(html.includes('href="tel:+251938890630"'), `${page.name} links correctly to phone tel:+251938890630`);
-  assert(html.includes('href="mailto:danielgelchuo@gmail.com"'), `${page.name} links correctly to email mailto:danielgelchuo@gmail.com`);
+  assert(html.includes('href="mailto:danielgelchu0@gmail.com"'), `${page.name} links correctly to email mailto:danielgelchu0@gmail.com`);
 
-  // WhatsApp feature flag check (should be hidden)
-  assert(!html.includes('channel-whatsapp'), `${page.name} WhatsApp button is hidden when hasWhatsApp is false`);
+  // WhatsApp Business contact channel check
+  assert(html.includes('channel-whatsapp'), `${page.name} renders WhatsApp button when hasWhatsApp is true`);
+  assert(html.includes('https://wa.me/251938890630'), `${page.name} WhatsApp button links to wa.me/251938890630`);
+  assert(html.includes('class="floating-whatsapp"'), `${page.name} includes floating quick-action WhatsApp button`);
+  assert(html.includes('class="ambient-mesh"'), `${page.name} includes ambient background glow mesh`);
 }
 
 // 3. Zero-JS Functionality
