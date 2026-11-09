@@ -68,7 +68,28 @@ function renderContact(content, config, lang = "en") {
         <div class="contact-form-column">
           <div class="white-contact-card">
             <div class="white-card-header">
-              <span class="white-card-pill">${lang === "am" ? "ቀጥተኛ የስራ ጥያቄ" : "Direct Inquiry"}</span>
+              <div class="inquiry-presence-row">
+                <div class="inquiry-avatar-aura">
+                  <picture>
+                    <source srcset="/brand/daniel-gelchu.webp" type="image/webp">
+                    <img 
+                      src="/brand/daniel-gelchu.png" 
+                      alt="${config.developerName}" 
+                      width="60" 
+                      height="60" 
+                      class="inquiry-animated-portrait"
+                    />
+                  </picture>
+                  <span class="avatar-beacon-pulse"></span>
+                </div>
+                <div class="inquiry-presence-meta">
+                  <span class="white-card-pill">${lang === "am" ? "ቀጥተኛ የስራ ጥያቄ" : "Direct Inquiry"}</span>
+                  <div class="inquiry-active-tag">
+                    <span class="status-indicator"></span>
+                    <span>${lang === "am" ? "ዳንኤል ገልቹ • 24 ሰዓት ክፍት" : "Daniel Gelchu • 24/7 Response"}</span>
+                  </div>
+                </div>
+              </div>
               <h3>${form.title}</h3>
               <p>${form.subtitle}</p>
             </div>
@@ -142,6 +163,31 @@ function renderContact(content, config, lang = "en") {
 
           <h2 class="contact-hero-heading">${t.headline}</h2>
           <p class="contact-editorial-sub">${t.invitation || t.subtitle}</p>
+
+          <!-- Mobile-Optimized Animated Portrait Spotlight -->
+          <div class="mobile-portrait-card" aria-hidden="true">
+            <div class="portrait-drift-frame">
+              <picture>
+                <source srcset="/brand/daniel-gelchu.webp" type="image/webp">
+                <img 
+                  src="/brand/daniel-gelchu.png" 
+                  alt="${config.developerName}" 
+                  width="110" 
+                  height="110" 
+                  class="portrait-drift-img" 
+                />
+              </picture>
+              <div class="portrait-radar-ring"></div>
+            </div>
+            <div class="mobile-portrait-details">
+              <h4>${config.developerName}</h4>
+              <p>${lang === "am" ? "የድረ-ገጽና ሲስተም ምህንድስና" : "Full-Stack Web & Systems Architect"}</p>
+              <div class="mobile-portrait-status">
+                <span class="status-indicator"></span>
+                <span>${lang === "am" ? "በዋትስአፕና በቴሌግራም ቀጥታ መልስ" : "Direct WhatsApp & Telegram Response"}</span>
+              </div>
+            </div>
+          </div>
 
           <!-- Understated Elegant Direct Channels -->
           <div class="contact-channels ${config.contact.hasWhatsApp ? "has-whatsapp" : ""}">

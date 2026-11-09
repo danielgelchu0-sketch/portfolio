@@ -3,11 +3,16 @@ const { getIcon } = require("./icons");
 
 function renderProcess(content, lang = "en") {
   const t = content[lang].process;
+  const stepIcons = ["clipboard-list", "server", "zap", "globe"];
 
-  const stepsHtml = t.steps.map(step => {
+  const stepsHtml = t.steps.map((step, idx) => {
+    const iconName = stepIcons[idx] || "zap";
     return `
-    <div class="card process-card">
-      <div class="process-num">${step.num}</div>
+    <div class="card process-card" style="--stagger-delay: ${(idx + 1) * 80}ms;">
+      <div class="process-card-header">
+        <span class="process-num">${step.num}</span>
+        <div class="process-step-icon">${getIcon(iconName)}</div>
+      </div>
       <h3>${step.title}</h3>
       <p>${step.desc}</p>
     </div>

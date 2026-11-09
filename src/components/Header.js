@@ -43,6 +43,35 @@ function renderHeader(content, config, lang = "en") {
             ${getIcon("whatsapp")}
             <span>WhatsApp</span>
           </a>
+
+          <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-label="${lang === "am" ? "ማውጫ ክፈት" : "Toggle Menu"}" aria-expanded="false" aria-controls="mobile-nav-drawer">
+            <span class="icon-open">${getIcon("menu")}</span>
+            <span class="icon-close">${getIcon("x")}</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Slide-Down Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+      <div class="container">
+        <nav class="mobile-drawer-nav" aria-label="Mobile Navigation">
+          <a href="#work" class="mobile-nav-link">${t.work}</a>
+          <a href="#services" class="mobile-nav-link">${t.services}</a>
+          <a href="#skills" class="mobile-nav-link">${t.skills || "Skills"}</a>
+          <a href="#process" class="mobile-nav-link">${t.process}</a>
+          <a href="#about" class="mobile-nav-link">${t.about}</a>
+          <a href="#contact" class="mobile-nav-link">${t.contact}</a>
+        </nav>
+        <div class="mobile-drawer-actions">
+          <a href="${whatsappUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm w-full">
+            ${getIcon("whatsapp")}
+            <span>${lang === "am" ? "በዋትስአፕ አግኙኝ" : "WhatsApp Direct"}</span>
+          </a>
+          <a href="${telegramUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm w-full">
+            ${getIcon("telegram")}
+            <span>Telegram (@${config.contact.telegram.replace("@", "")})</span>
+          </a>
         </div>
       </div>
     </div>

@@ -112,6 +112,11 @@ for (const page of htmlPages) {
   assert(html.includes('id="contact-form"'), `${page.name} includes functional contact form`);
   assert(html.includes('/brand/daniel-gelchu.webp'), `${page.name} reuses Daniel's actual photograph`);
   assert(html.includes('class="ambient-mesh"'), `${page.name} includes ambient background glow mesh`);
+  assert(html.includes('class="mobile-bottom-dock"'), `${page.name} includes mobile quick navigation dock`);
+  assert(html.includes('id="mobile-menu-btn"'), `${page.name} includes mobile menu toggle button`);
+  assert(html.includes('id="mobile-nav-drawer"'), `${page.name} includes mobile navigation slide drawer`);
+  assert(html.includes('inquiry-animated-portrait'), `${page.name} includes animated direct inquiry portrait`);
+  assert(html.includes('mobile-portrait-card'), `${page.name} includes mobile portrait spotlight card`);
 }
 
 // 3. Zero-JS Functionality

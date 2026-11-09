@@ -1,5 +1,34 @@
 // src/layout.js - HTML Document Shell with SEO, Open Graph & Accessibility
 const { renderFloatingWhatsApp } = require("./components/FloatingWhatsApp");
+const { getIcon } = require("./components/icons");
+
+function renderMobileDock(content, lang = "en") {
+  const nav = content[lang].nav;
+  return `
+  <nav class="mobile-bottom-dock" aria-label="${lang === 'am' ? 'ፈጣን ማውጫ' : 'Quick Navigation'}">
+    <a href="#work" class="dock-item" aria-label="${nav.work}">
+      <span class="dock-icon">${getIcon("globe")}</span>
+      <span class="dock-label">${nav.work}</span>
+    </a>
+    <a href="#skills" class="dock-item" aria-label="${nav.skills || "Skills"}">
+      <span class="dock-icon">${getIcon("server")}</span>
+      <span class="dock-label">${nav.skills || "Skills"}</span>
+    </a>
+    <a href="#services" class="dock-item" aria-label="${nav.services}">
+      <span class="dock-icon">${getIcon("zap")}</span>
+      <span class="dock-label">${nav.services}</span>
+    </a>
+    <a href="#about" class="dock-item" aria-label="${nav.about}">
+      <span class="dock-icon">${getIcon("shield-check")}</span>
+      <span class="dock-label">${nav.about}</span>
+    </a>
+    <a href="#contact" class="dock-item dock-item-highlight" aria-label="${nav.contact}">
+      <span class="dock-icon">${getIcon("mail")}</span>
+      <span class="dock-label">${nav.contact}</span>
+    </a>
+  </nav>
+  `;
+}
 
 function renderLayout({ bodyContent, content, config, lang = "en" }) {
   const meta = content[lang].meta;
@@ -76,12 +105,38 @@ function renderLayout({ bodyContent, content, config, lang = "en" }) {
   </div>
 
   ${floatingWhatsApp}
+  ${renderMobileDock(content, lang)}
 
   <!-- Lightweight, zero-dependency 2026 client progressive enhancement -->
   <script>
     (function() {
       // Mark JS active for progressive enhancement
       document.documentElement.classList.add('js-ready');
+
+      // Mobile drawer toggle handler
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const drawer = document.getElementById('mobile-nav-drawer');
+      if (menuBtn && drawer) {
+        menuBtn.addEventListener('click', function() {
+          const isOpen = drawer.classList.toggle('is-open');
+          menuBtn.setAttribute('aria-expanded', isOpen);
+          menuBtn.classList.toggle('is-active', isOpen);
+          drawer.setAttribute('aria-hidden', !isOpen);
+          document.body.classList.toggle('nav-drawer-open', isOpen);
+        });
+
+        // Close drawer when any link inside it is tapped
+        const drawerLinks = drawer.querySelectorAll('a');
+        drawerLinks.forEach(function(link) {
+          link.addEventListener('click', function() {
+            drawer.classList.remove('is-open');
+            menuBtn.setAttribute('aria-expanded', 'false');
+            menuBtn.classList.remove('is-active');
+            drawer.setAttribute('aria-hidden', 'true');
+            document.body.classList.remove('nav-drawer-open');
+          });
+        });
+      }
 
       // Handle in-page smooth transitions if JS is enabled
       const langBtns = document.querySelectorAll('.lang-btn');
@@ -95,7 +150,13 @@ function renderLayout({ bodyContent, content, config, lang = "en" }) {
       });
 
       // 2026 Smooth Staggered Reveal on Scroll (IntersectionObserver)
-      if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const targets = document.querySelectorAll(
+        '.card, .section-header, .stat-item, .contact-card-btn, .hero-content, .hero-showcase, .avatar-frame, .about-bio, .principles-box, .skill-category-card, .white-contact-card, .contact-info-column, .mobile-portrait-card'
+      );
+
+      const isReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      if ('IntersectionObserver' in window && !isReducedMotion) {
         const observer = new IntersectionObserver((entries) => {
           entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -104,14 +165,9 @@ function renderLayout({ bodyContent, content, config, lang = "en" }) {
             }
           });
         }, { 
-          threshold: 0.1,
-          rootMargin: '0px 0px -40px 0px' 
+          threshold: 0.05,
+          rootMargin: '0px 0px 40px 0px' 
         });
-
-        // Collect elements for fluid entrance
-        const targets = document.querySelectorAll(
-          '.card, .section-header, .stat-item, .contact-card-btn, .hero-content, .hero-showcase, .avatar-frame, .about-bio, .principles-box, .skill-category-card, .white-contact-card, .contact-info-column'
-        );
 
         // Group sibling items to automatically set cascading stagger delays
         const groupMap = new Map();
@@ -127,12 +183,14 @@ function renderLayout({ bodyContent, content, config, lang = "en" }) {
         groupMap.forEach(children => {
           children.forEach((child, index) => {
             if (index > 0 && index < 6) {
-              child.style.setProperty('--stagger-delay', (index * 70) + 'ms');
+              child.style.setProperty('--stagger-delay', (index * 60) + 'ms');
             }
           });
         });
 
         targets.forEach(el => observer.observe(el));
+      } else {
+        targets.forEach(el => el.classList.add('is-revealed'));
       }
 
       // Interactive Contact Form Handling with Validation & Feedback
