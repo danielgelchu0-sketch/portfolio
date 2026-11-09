@@ -23,6 +23,7 @@ function renderHeader(content, config, lang = "en") {
         <nav class="nav-menu" aria-label="Main Navigation">
           <a href="#work" class="nav-link">${t.work}</a>
           <a href="#services" class="nav-link">${t.services}</a>
+          <a href="#skills" class="nav-link">${t.skills || "Skills"}</a>
           <a href="#process" class="nav-link">${t.process}</a>
           <a href="#about" class="nav-link">${t.about}</a>
           <a href="#contact" class="nav-link">${t.contact}</a>

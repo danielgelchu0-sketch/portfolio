@@ -8,10 +8,12 @@
   "nav": {
     "work": "Work",
     "services": "Services",
+    "skills": "Skills",
     "process": "How I Work",
     "about": "About",
     "contact": "Contact",
-    "ctaTelegram": "Message on Telegram"
+    "ctaTelegram": "Telegram",
+    "ctaWhatsApp": "WhatsApp"
   },
   "hero": {
     "badge": "Web Apps • Digital Catalogs • Media Hubs",
@@ -39,6 +41,11 @@
     "problemLabel": "Problem Solved:",
     "deliverableLabel": "What You Get:",
     "quoteCta": "Need a tailored catalog, media hub, or system for your business? Ask me for a quote on Telegram."
+  },
+  "skills": {
+    "badge": "Technical Arsenal",
+    "headline": "Engineering Rooted in Battle-Tested Technologies",
+    "subtitle": "I work with robust, lean frameworks that deliver uncompromising speed, long-term stability, and zero ongoing cloud bills."
   },
   "work": {
     "badge": "Portfolio",
@@ -92,9 +99,33 @@
     ]
   },
   "contact": {
-    "badge": "Let's Talk",
-    "headline": "Ready to Streamline Your Business Operations?",
-    "subtitle": "Send me a message with a brief note about your business, current bottlenecks, or project goals. I typically reply within a few hours.",
+    "badge": "Get In Touch",
+    "headline": "Let's Build Something Exceptional Together",
+    "subtitle": "Have a project in mind, need technical advice, or looking to streamline your operations? Fill out the brief or connect directly below.",
+    "invitation": "I partner directly with businesses, startups, and creators to engineer dependable digital systems. Work directly with me without agency markups.",
+    "form": {
+      "title": "Start a Project Brief",
+      "subtitle": "Send a direct inquiry about your goals and timeline.",
+      "nameLabel": "Your Name",
+      "namePlaceholder": "e.g. Abebe Bikila",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "you@example.com",
+      "projectTypeLabel": "Project Type",
+      "projectTypeOptions": [
+        "Web Application Development",
+        "Business Website / Catalog",
+        "Media & Streaming Platform",
+        "System Automation / Optimization",
+        "Other Technical Inquiry"
+      ],
+      "messageLabel": "Project Summary & Objectives",
+      "messagePlaceholder": "Briefly describe your business, timeline, key features, and what you aim to achieve...",
+      "submitBtn": "Send Project Inquiry",
+      "submittingBtn": "Sending Message...",
+      "successMsg": "Thank you! Your message has been prepared. I'll get back to you shortly.",
+      "errorMsg": "Something went wrong. Please reach out directly via Telegram or WhatsApp."
+    },
+    "directHeading": "Direct Channels",
     "telegramBtn": "Message on Telegram",
     "phoneBtn": "Direct Phone Call",
     "emailBtn": "Send an Email",

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "frontend",
+    "icon": "globe",
+    "en": {
+      "title": "Frontend Engineering",
+      "subtitle": "Lightweight, accessible, and ultra-fast client experiences.",
+      "skills": ["Modern JavaScript (ES6+)", "Semantic HTML5 & Modern CSS3", "Tailwind CSS", "Mobile-First Architecture", "Accessibility (WCAG AA)", "Fluid CSS Animations"]
+    },
+    "am": {
+      "title": "የፊት-ለፊት ገጽ ምህንድስና (Frontend)",
+      "subtitle": "ቀላል፣ ፈጣን እና ለሞባይል ተጠቃሚዎች የተመቹ ድረ-ገጾች።",
+      "skills": ["ዘመናዊ JavaScript (ES6+)", "HTML5 እና CSS3", "Tailwind CSS", "ለሞባይል አመቺ አሰራር (Mobile-First)", "ተደራሽነትና ፍጥነት (WCAG AA)", "የፈሳሽ አኒሜሽን ዲዛይን"]
+    }
+  },
+  {
+    "id": "backend",
+    "icon": "server",
+    "en": {
+      "title": "Backend & Application Logic",
+      "subtitle": "Secure, maintainable server architecture and business APIs.",
+      "skills": ["Python", "Django 5.x", "RESTful APIs", "Authentication & Security", "Data Modeling & Validations", "Server-Side Logic"]
+    },
+    "am": {
+      "title": "የጀርባ ሲስተም እና የዳታ አስተዳደር (Backend)",
+      "subtitle": "አስተማማኝ፣ ደህንነቱ የተጠበቀና ቀልጣፋ የሰርቨር ሲስተሞች።",
+      "skills": ["Python", "Django 5.x", "RESTful API ዝርጋታ", "የተጠቃሚዎች ደህንነትና ቁጥጥር", "የዳታ አወቃቀርና ማረጋገጫ", "የሰርቨር ስራዎች ቅንብር"]
+    }
+  },
+  {
+    "id": "databases",
+    "icon": "database",
+    "en": {
+      "title": "Databases & Storage",
+      "subtitle": "Resilient relational databases and fast edge key-value storage.",
+      "skills": ["PostgreSQL", "SQLite", "Edge KV Storage", "Schema Design", "Query Optimization", "Data Integrity"]
+    },
+    "am": {
+      "title": "ዳታቤዝ እና የዳታ ማከማቻ (Databases)",
+      "subtitle": "አስተማማኝ የዳታቤዝ አያያዝና ፈጣን የዳታ ልውውጥ።",
+      "skills": ["PostgreSQL", "SQLite", "Edge KV ማከማቻ", "የዳታቤዝ ዲዛይን", "የጥያቄዎች ፍጥነት ማሻሻያ", "የዳታ ጥበቃና አስተማማኝነት"]
+    }
+  },
+  {
+    "id": "devops",
+    "icon": "zap",
+    "en": {
+      "title": "Cloud, Deployment & Tools",
+      "subtitle": "Global zero-budget hosting with high uptime and Git workflows.",
+      "skills": ["Cloudflare Workers & Edge", "Render Cloud", "PythonAnywhere", "Git & GitHub", "Edge Caching & Performance", "Zero-Cost Cloud Ops"]
+    },
+    "am": {
+      "title": "ክላውድ፣ ሆስቲንግ እና መሳሪያዎች (Cloud & Tools)",
+      "subtitle": "ያለ ወርሃዊ የዶላር ክፍያ በከፍተኛ አለምአቀፍ ፍጥነት ማሰራጨት።",
+      "skills": ["Cloudflare Workers & Pages", "Render ክላውድ", "PythonAnywhere", "Git እና GitHub", "ኤጅ ካሺንግ (Edge Caching)", "ዜሮ-ወጪ ክላውድ ሆስቲንግ"]
+    }
+  }
+]

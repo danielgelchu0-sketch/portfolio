@@ -110,7 +110,7 @@ function renderLayout({ bodyContent, content, config, lang = "en" }) {
 
         // Collect elements for fluid entrance
         const targets = document.querySelectorAll(
-          '.card, .section-header, .stat-item, .contact-card-btn, .hero-content, .hero-showcase, .avatar-frame, .about-bio, .principles-box'
+          '.card, .section-header, .stat-item, .contact-card-btn, .hero-content, .hero-showcase, .avatar-frame, .about-bio, .principles-box, .skill-category-card, .white-contact-card, .contact-info-column'
         );
 
         // Group sibling items to automatically set cascading stagger delays
@@ -133,6 +133,55 @@ function renderLayout({ bodyContent, content, config, lang = "en" }) {
         });
 
         targets.forEach(el => observer.observe(el));
+      }
+
+      // Interactive Contact Form Handling with Validation & Feedback
+      const formEl = document.getElementById('contact-form');
+      if (formEl) {
+        formEl.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const nameInput = document.getElementById('contact-name');
+          const emailInput = document.getElementById('contact-email');
+          const typeInput = document.getElementById('contact-project-type');
+          const messageInput = document.getElementById('contact-message');
+          const feedback = document.getElementById('form-feedback');
+          const submitBtn = document.getElementById('contact-submit-btn');
+
+          const name = nameInput ? nameInput.value.trim() : '';
+          const email = emailInput ? emailInput.value.trim() : '';
+          const ptype = typeInput ? typeInput.value : '';
+          const message = messageInput ? messageInput.value.trim() : '';
+
+          if (!name || !email || !message) {
+            if (feedback) {
+              feedback.className = 'form-feedback error';
+              feedback.textContent = '${lang === "am" ? "እባክዎን ሁሉንም አስፈላጊ መረጃዎች በትክክል ይሙሉ" : "Please complete all required fields."}';
+            }
+            return;
+          }
+
+          if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.classList.add('is-submitting');
+          }
+
+          setTimeout(function() {
+            const subject = encodeURIComponent('[Project Brief] ' + (ptype || 'New Project') + ' - ' + name);
+            const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nProject: ' + ptype + '\n\n' + message);
+            window.location.href = 'mailto:${config.contact.email}?subject=' + subject + '&body=' + body;
+
+            if (feedback) {
+              feedback.className = 'form-feedback success';
+              feedback.textContent = '${lang === "am" ? "እናመሰግናለን! መልእክትዎ ተዘጋጅቷል። በቅርቡ ምላሽ እሰጥዎታለሁ።" : "Thank you! Your project inquiry has been prepared. Daniel will be in touch shortly."}';
+            }
+
+            if (submitBtn) {
+              submitBtn.disabled = false;
+              submitBtn.classList.remove('is-submitting');
+            }
+            formEl.reset();
+          }, 350);
+        });
       }
     })();
   </script>

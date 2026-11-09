@@ -88,7 +88,7 @@ for (const page of htmlPages) {
   assert(allImagesValid, `${page.name} all <img> tags have alt, width, and height attributes`);
 
   // Check section anchors
-  const requiredSectionIds = ["#top", "#work", "#services", "#process", "#about", "#contact", "#main-content"];
+  const requiredSectionIds = ["#top", "#work", "#services", "#skills", "#process", "#about", "#contact", "#main-content"];
   for (const anchor of requiredSectionIds) {
     const id = anchor.substring(1);
     assert(html.includes(`id="${id}"`), `${page.name} contains required section target: id="${id}"`);
@@ -105,6 +105,10 @@ for (const page of htmlPages) {
   assert(html.includes('class="floating-whatsapp"'), `${page.name} includes floating quick-action WhatsApp button`);
   assert(html.includes('btn-whatsapp'), `${page.name} includes WhatsApp CTA button alongside Telegram`);
   assert(html.includes('https://github.com/danielgelchu0-sketch'), `${page.name} includes GitHub profile link`);
+  assert(html.includes('https://www.linkedin.com/in/danswe'), `${page.name} includes LinkedIn profile link`);
+  assert(html.includes('white-contact-card'), `${page.name} includes white contact form card`);
+  assert(html.includes('id="contact-form"'), `${page.name} includes functional contact form`);
+  assert(html.includes('/brand/daniel-gelchu.webp'), `${page.name} reuses Daniel's actual photograph`);
   assert(html.includes('class="ambient-mesh"'), `${page.name} includes ambient background glow mesh`);
 }
 

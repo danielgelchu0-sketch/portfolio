@@ -6,6 +6,7 @@ const { renderHeader } = require("./components/Header");
 const { renderHero } = require("./components/Hero");
 const { renderAudience } = require("./components/Audience");
 const { renderServices } = require("./components/Services");
+const { renderSkills } = require("./components/Skills");
 const { renderWork } = require("./components/Work");
 const { renderProcess } = require("./components/Process");
 const { renderAbout } = require("./components/About");
@@ -112,6 +113,8 @@ function build(projectRoot) {
   const audienceData = loadJson(path.join(packDir, "audience.json"));
   const servicesData = loadJson(path.join(packDir, "services.json"));
   const projectsData = loadJson(path.join(packDir, "projects.json"));
+  const skillsPath = path.join(packDir, "skills.json");
+  const skillsData = fs.existsSync(skillsPath) ? loadJson(skillsPath) : [];
 
   const content = {
     en: enData,
@@ -130,6 +133,7 @@ function build(projectRoot) {
     const hero = renderHero(content, config, lang);
     const audience = renderAudience(content, audienceData, lang);
     const services = renderServices(content, servicesData, config, lang);
+    const skills = renderSkills(content, skillsData, lang);
     const work = renderWork(content, projectsData, lang);
     const process = renderProcess(content, lang);
     const about = renderAbout(content, config, lang);
@@ -142,6 +146,7 @@ function build(projectRoot) {
         ${hero}
         ${audience}
         ${services}
+        ${skills}
         ${work}
         ${process}
         ${about}

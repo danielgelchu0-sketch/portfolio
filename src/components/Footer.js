@@ -38,6 +38,7 @@ function renderFooter(content, config, lang = "en") {
         <nav class="footer-nav" aria-label="Footer Navigation">
           <a href="#work">${nav.work}</a>
           <a href="#services">${nav.services}</a>
+          <a href="#skills">${nav.skills || "Skills"}</a>
           <a href="#process">${nav.process}</a>
           <a href="#about">${nav.about}</a>
           <a href="#contact">${nav.contact}</a>
