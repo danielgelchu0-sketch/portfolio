@@ -36,6 +36,7 @@ function renderContact(content, config, lang = "en") {
     ? encodeURIComponent("ሰላም ዳንኤል፣ የዲጂታል አገልግሎት ፈልጌ ነበረ።")
     : encodeURIComponent("Hello Daniel, I'd like to inquire about your digital services.");
   const whatsappUrl = `https://wa.me/${waClean}?text=${waGreeting}`;
+  const waHandle = config.contact.whatsappHandle || "@Biruhdigital";
 
   const ghUrl = (config.social && config.social.github) || "https://github.com/danielgelchu0-sketch";
   const inUrl = (config.social && config.social.linkedin) || "https://www.linkedin.com/in/danswe";
@@ -148,7 +149,7 @@ function renderContact(content, config, lang = "en") {
               <div class="contact-icon-large">
                 ${getIcon("whatsapp")}
               </div>
-              <span>WhatsApp Business</span>
+              <span>WhatsApp • ${waHandle}</span>
               <strong>${config.contact.whatsapp}</strong>
             </a>
 

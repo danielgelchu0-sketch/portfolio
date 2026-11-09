@@ -117,7 +117,7 @@ Edit `site.config.json`:
 ### D. How to Enable WhatsApp
 When WhatsApp is set up and operational for customer inquiries:
 1. In `site.config.json`, change `"hasWhatsApp": true`.
-2. Add your number in international format: `"whatsapp": "+251938890630"`.
+2. Add your number in international format: `"whatsapp": "+251 717081888"`.
 3. Re-run `npm run build`. The WhatsApp card button will automatically appear in the contact section.
 
 ### E. How to Create a New Industry Pack (e.g. Restaurants or Clinics)

@@ -101,7 +101,9 @@ for (const page of htmlPages) {
 
   // WhatsApp Business contact channel check
   assert(html.includes('channel-whatsapp'), `${page.name} renders WhatsApp button when hasWhatsApp is true`);
-  assert(html.includes('https://wa.me/251938890630'), `${page.name} WhatsApp button links to wa.me/251938890630`);
+  assert(html.includes('https://wa.me/251717081888'), `${page.name} WhatsApp button links to wa.me/251717081888`);
+  assert(html.includes('+251 717081888'), `${page.name} renders WhatsApp number +251 717081888`);
+  assert(html.includes('@Biruhdigital'), `${page.name} renders WhatsApp handle @Biruhdigital`);
   assert(html.includes('class="floating-whatsapp"'), `${page.name} includes floating quick-action WhatsApp button`);
   assert(html.includes('btn-whatsapp'), `${page.name} includes WhatsApp CTA button alongside Telegram`);
   assert(html.includes('https://github.com/danielgelchu0-sketch'), `${page.name} includes GitHub profile link`);

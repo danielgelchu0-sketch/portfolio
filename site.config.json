@@ -4,14 +4,15 @@
   "brandNameAm": "ብሩህ ዲጂታል",
   "developerName": "Daniel Gelchu",
   "defaultLang": "am",
-  "domain": "portfolio.biruh.workers.dev",
-  "siteUrl": "https://portfolio.biruh.workers.dev",
+  "domain": "portfolio.biruhdigital.workers.dev",
+  "siteUrl": "https://portfolio.biruhdigital.workers.dev",
   "contact": {
     "telegram": "Abule_da",
     "phone": "+251938890630",
     "email": "danielgelchu0@gmail.com",
     "hasWhatsApp": true,
-    "whatsapp": "+251938890630"
+    "whatsapp": "+251 717081888",
+    "whatsappHandle": "@Biruhdigital"
   },
   "social": {
     "github": "https://github.com/danielgelchu0-sketch",
